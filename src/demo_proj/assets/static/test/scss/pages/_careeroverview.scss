@@ -1,0 +1,282 @@
+#career-overview
+{
+  #Career-banner
+  {
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    position: relative;
+    &::after {
+        content:'';
+        position: absolute;
+        top:0px;
+        left:0px;
+        right: 0px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        height: 100%;
+    }
+    @media(max-width:767px)
+    {
+      height: 450px;
+      background-image: url('/static/embassy/images/careers/careers_page_mob-min.jpg') !important;
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    @media(min-width:991px) and (max-width:1550px)
+    {
+      height: 95vh !important;
+    }
+    .career-cont-wrapper
+    {
+      position: absolute;
+      bottom: 30px;
+      right: 0px;
+      left:0px;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 1;
+      h2
+      {
+        font-size: 48px;
+        font-family: $fontmedium;
+        line-height: 36px;
+        color:#fff;
+        padding-bottom: 15px;
+        text-shadow: 7px 7px 6px #444444;
+        border-left: 15px solid #0f171d;
+        background-color: #f7941dd1;
+        opacity: 1;
+        padding: 18px 30px 24px;
+        display: inline-block;
+        @media(max-width:575px)
+        {
+          font-size: 28px;
+        }
+        @media(min-width:576px) and (max-width:767px)
+        {
+          font-size: 32px;
+        }
+      }
+      .career-team-wrapper
+      {
+        padding: 25px;
+        padding-bottom: 40px;
+        @media(max-width:991px)
+        {
+          width: unset;
+        }
+        h3
+        {
+          color: #FFFFFF;
+          font-size: 26px !important;
+          font-family: $fontmedium;
+          margin: 0;
+          padding: 12px 0px;
+          @media(max-width:575px)
+          {
+            font-size: 22px;
+          }
+          @media(min-width:576px) and (max-width:767px)
+          {
+            font-size: 28px;
+          }
+        }
+        h4
+        {
+          display: flex;
+          align-items: center;
+          color:#fff;
+          justify-content: center;
+          font-size: 18px;
+          font-family: $fontmedium;
+          span
+          {
+            padding-right: 10px;
+          }
+        }
+        .career-job-wrapper
+        {
+          padding: 15px 0px;
+          p
+          {
+            color:#fff;
+            font-size: 18px;
+            font-family: $fontregular;
+            opacity: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #career-scroll {
+    border-bottom: 1px solid #707070;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    background-color: #ffff;
+    ul
+    {
+      display: flex;
+      padding-left: 15px;
+      list-style-type: none;
+      margin: 0;
+      li
+      {
+        padding: 20px 0px 10px;
+        a
+        {
+          color:#BFBFBF;
+          text-transform: uppercase;
+          padding: 8px 20px;
+          padding-left: 15px;
+          cursor: pointer;
+          &.active
+          {
+            color:#040404;
+            border-bottom: 4px solid #F7941D;
+          }
+        }
+      }
+    }
+  }
+
+  #role-overview
+  {
+    a
+    {
+      color:#fff;
+      font-family: $fontmedium;
+      border: 1px solid #F7941D;
+      background-color: #F7941D;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 20px;
+      &:hover
+      {
+        background-color: transparent;
+        color:#F7941D;
+        transition: 0.3s ease-in;
+      }
+    }
+    .role-overview-wrapper
+    {
+      padding-bottom: 0px;
+      .role-overview-head-wrapper
+      {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+      }
+      h2
+      {
+        color:#261C20;
+        font-size: 26px;
+        font-family: $fontmedium;
+        text-transform: capitalize;
+      }
+      p
+      {
+        color: #444444;
+        font-family: $fontregular;
+        line-height: 23px;
+        padding: 20px 0px;
+      }
+    }
+    .key-responsibilities-wrapper
+    {
+      padding-bottom:15px;
+      h2
+      {
+        color:#261C20;
+        font-size: 26px;
+        font-family: $fontmedium;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        margin: 0;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+      }
+      ul
+      {
+        padding-left: 20px;
+        @media(max-width:768px)
+        {
+          padding-left: 25px;
+        }
+        li
+        {
+          color:#444444;
+          font-family: $fontregular;
+          padding-bottom:5px;
+          line-height: 23px;
+        }
+      }
+    }
+    .requirements-wrapper
+    {
+      padding-bottom: 50px;
+      @media(max-width:768px) {
+        padding-bottom: 50px;
+      }
+      h2
+      {
+        color:#261C20;
+        font-size: 26px;
+        font-family: $fontmedium;
+        text-transform: capitalize;
+        padding-bottom:10px;
+        margin: 0;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+      }
+      ul
+      {
+        padding-left: 20px;
+        @media(max-width:768px)
+        {
+          padding-left: 25px;
+        }
+        li
+        {
+          color:#444444;
+          font-family: $fontregular;
+          padding-bottom:5px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
+.role-overview-wrapper {
+    h2 {
+        color: #261C20;
+        font-size: 26px;
+        font-family: "Roboto-Medium";
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        margin: 0;
+        @media(max-width: 576px)
+        {
+          font-size: 22px;
+        }
+    }
+    ul {
+        padding-left: 20px;
+        li {
+            color: #444444;
+            font-family: "Roboto-Regular";
+            padding-bottom:5px;
+            line-height: 23px;
+        }
+    }
+}

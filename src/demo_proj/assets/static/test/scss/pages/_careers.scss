@@ -1,0 +1,557 @@
+
+
+
+#career--main {
+  .career--banner {
+    @include bannerwrapper;
+    @include navmenu;
+    position: relative;
+    height: 350px;
+
+    .career--banner--head {
+      position: absolute;
+      bottom: 35px;
+      @media screen and (min-width: 1100.98px) {
+        width: 35%;
+      }
+
+      .career--banner--heading {
+        background-color: $bgwhite;
+        padding: 25px 20px;
+
+        p {
+          margin: 5px 0 15px;
+        }
+
+        a {
+          background-color:$btnbg1;
+          padding: 10px 20px;
+          color: $colorwhite;
+          border-radius: 0;
+          margin-right: 25px;
+        }
+      }
+      @media screen and (min-width: 1501.98px) {
+        h1 {
+          font-size: 50px;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  #career--tabs {
+    #careerTab {
+      border-bottom: 2px solid $brdr2;
+      margin-bottom: 30px;
+      justify-content: space-between;
+
+      li {
+        border: 0;
+        transition: 0.3s;
+        font-size: 14px;
+        padding: 0;
+        @media screen and (min-width: 1401.98px) {
+          width: 13%;
+        }
+        @media screen and (min-width: 1601.98px) {
+          font-size: 17px;
+        }
+
+        &:hover {
+          border: 0;
+
+          a {
+            border-bottom: wpx solid $brdr4;
+          }
+        }
+
+        a {
+          border: 0;
+          text-align: center;
+          padding: 10px 0;
+          @media screen and (max-width: 1401.98px) {
+            padding: 10px 16px;
+          }
+        }
+
+        .active {
+          border: 0;
+          border-bottom: 2px solid $brdr4;
+        }
+
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #overview {
+    .overview {
+      padding: 40px 0;
+      .overview--row {
+
+
+      }
+
+    }
+  }
+}
+
+.career-sticky {
+  position: fixed;
+  top:180px !important;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+  #careerTab {
+      margin-bottom: 0px !important;
+  }
+}
+
+#join {
+  .join--wrapper--right {
+    .bottomspace {
+      padding-bottom: 40px;
+    }
+
+    .fifthtext {
+      border: 1px solid;
+      padding: 35px 10px;
+      @media(max-width: 768px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#dyngrid {
+  .wrapper {
+    display: grid;
+    grid-template-rows: repeat(100%);
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 75% 24%;
+    .cnumbertext {}
+
+    .cheading {}
+
+    .ctextbody {}
+  }
+
+  .wrapper {
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+
+  .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+    min-height: 200px;
+  }
+  @media(max-width: 768px) {
+    .wrapper {
+      grid-auto-flow: unset;
+      grid-auto-columns: 100%;
+    }
+
+    .wrp2 {
+      grid-auto-flow: unset !important;
+      grid-auto-columns: 100% !important;
+    }
+  }
+
+  .wrp2 {
+    display: grid;
+    grid-template-rows: repeat(100%);
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 24% 75%;
+
+    .cnumbertext {}
+
+    .cheading {}
+
+    .ctextbody {}
+  }
+
+  .wrp2 {
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+
+  .wrp2 > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+    margin-top: 20px;
+    min-height: 200px;
+  }
+}
+
+#values {
+  padding: 60px;
+  margin-top: 40px;
+  background-color: #efefef;
+  @media(min-width: 768px) {
+    .col-1-5 {
+      width: 20%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .corehead {
+        padding: 20px 0 5px;
+      }
+    }
+  }
+}
+
+#culture {
+    padding: 50px 0px;
+  .owl-carousel {
+    z-index: 0 !important;
+  }
+
+  #owlculture {
+      .owl-nav {
+          display: flex;
+          justify-content: space-between;
+          margin: 35px 0px 0px;
+          width: 10%;
+          float: right;
+          margin-right: 112px;
+          div {
+              display: inline-block;
+          }
+      }
+
+
+  }
+}
+
+#awards {
+  .awardsandrec {
+    padding-top: 60px 0 20px;
+  }
+
+  .brand {
+    border: 1px solid;
+    padding: 20px 25px;
+    min-height: 212px;
+  }
+
+  .topspace {
+    padding: 40px 0;
+  }
+}
+
+#testimonials {
+  padding: 60px;
+  margin-top: 40px;
+  background-color: #efefef;
+
+  .owl-carousel {
+    z-index: 0 !important;
+  }
+
+  #owltestimonial {
+      margin-top: 20px;
+      .owl-nav {
+          display: flex;
+          justify-content: space-between;
+          margin: 35px 0px 0px;
+          width: 10%;
+          float: right;
+          margin-right: 112px;
+          div {
+              display: inline-block;
+          }
+      }
+
+    .testimonialbox {
+      border: 1px solid;
+      padding: 40px;
+
+      .testimonialnamerow {
+        padding-top: 20px;
+
+        .testimage {
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+
+#openings {
+  .row--gap {
+    padding: 60px 0 20px;
+
+    .openposition {}
+
+    .filter-by {
+      float: right;
+      margin: 0 auto;
+      line-height: 40px;
+
+      .filtertext {
+        padding: 0 0px;
+      }
+
+      .deptselect {
+        padding: 0 30px;
+      }
+
+      .locationselect {}
+    }
+  }
+}
+
+#owltestimonial {
+    .owl-stage {
+        padding-left: 0 !important;
+    }
+}
+.open--row {
+    padding: 20px 0px;
+    .position--opens {
+        border: 1px solid #ccc;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .open--apply {
+        float: right;
+    }
+}
+
+#career-overview {
+    .career--banner {
+      @include bannerwrapper;
+      @include navmenu;
+      position: relative;
+      height: 330px;
+
+      .career--banner--head {
+        position: absolute;
+        bottom: 35px;
+        @media screen and (min-width: 1100.98px) {
+          width: 35%;
+        }
+
+        .career--banner--heading {
+          background-color: $bgwhite;
+          padding: 25px 20px;
+
+          p {
+            margin: 5px 0 15px;
+          }
+
+          a {
+            background-color: $bgblack;
+            padding: 10px 20px;
+            color: $colorwhite;
+            border-radius: 0;
+            margin-right: 25px;
+          }
+        }
+        @media screen and (min-width: 1501.98px) {
+        }
+        @media screen and (max-width: 767.98px) {
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+
+          h1 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    #career--tabs {
+      #careerTab {
+        border-bottom: 2px solid $brdr2;
+        margin-bottom: 30px;
+
+        li {
+          border: 0;
+          transition: 0.3s;
+          font-size: 14px;
+          padding: 0;
+          @media screen and (min-width: 1401.98px) {
+            width: 13%;
+          }
+          @media screen and (min-width: 1601.98px) {
+            font-size: 17px;
+          }
+
+          &:hover {
+            border: 0;
+
+            a {
+              border-bottom: wpx solid $brdr4;
+            }
+          }
+
+          a {
+            border: 0;
+            text-align: center;
+            padding: 10px 0;
+            text-transform: uppercase;
+            @media screen and (max-width: 1401.98px) {
+              padding: 10px 16px;
+            }
+          }
+
+          .active {
+            border: 0;
+            border-bottom: 2px solid $brdr4;
+            font-weight: bold;
+          }
+
+          &:last-child {
+            a {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .content--inner--overview {
+        padding:15px 0px;
+        p {
+            font-size: 18px;
+            line-height: inherit;
+        }
+        ul {
+            padding-left: 21px;
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+    .career--apply {
+        background-color: $btnbg1;
+        color: #fff;
+        padding:15px 30px;
+    }
+}
+.career--inner--row {
+    padding: 20px 0px 40px;
+}
+.career--form {
+    background-color: #efefef;
+    padding: 40px 121px;
+    form {
+        width: 100%;
+        .form-group {
+            margin-bottom:30px;
+            label {
+                color: #2a2a2a;
+                font-weight: bold;
+
+            }
+            .form-control {
+                border: 1px solid #d3d3d3;
+                background-color: #f8f8f8;
+                border-radius: 0;
+                height: 45px;
+            }
+        }
+        .custom--upload {
+            label {
+                display: block;
+            }
+            #custom-button {
+              padding:9px 36px;
+              color: white;
+              background-color: #8f8f8f;
+              border-radius: 0px;
+              cursor: pointer;
+              border: 1px solid #8f8f8f;
+            }
+            #custom-text {
+              margin-left: 10px;
+              font-family: sans-serif;
+              color: #2a2a2a;
+            }
+        }
+        .btn--careers {
+            background-color: $btnbg1;
+            color: #fff;
+            border-radius: 0;
+            padding: 10px 29px;
+        }
+    }
+}
+
+#careerTab {
+    .active {
+        a {
+        color:$color3;
+        font-family: $fontmedium;
+        }
+    }
+    a {
+        margin-top: 0px;
+        background-color: inherit;
+    }
+}
+.filter--head {
+    color: $colorblack;
+    font-size: 17px;
+    display: inline-block;
+    padding-right: 25px;
+    font-weight: 600;
+}
+.overview--wrapper {
+  padding: 25px 20px;
+  margin-bottom: 20px;
+  border: 1px solid $brdr6;
+  h4 {}
+  p {
+    margin: 15px 0;
+  }
+  .overviws--btn {
+    font-weight: bold;
+    color: $colorblack;
+  }
+}
+.empty--careers {
+    p {
+        font-family:$fontmedium;
+        color: #261C20;
+        a {
+            color: #FF8E43;
+        }
+    }
+}
+.play--btn {
+   background: url('/static/embassy/images/pbtn.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   opacity: 1 !important;
+}

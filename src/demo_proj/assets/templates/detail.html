@@ -5,8 +5,11 @@
     <title></title>
   </head>
   <body>
-    <li>{{object.name}}</li>
-    <li>{{object.city}}</li>
-    <li>{{object.pub_date}}</li>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <input type="submit" name="" value="Submit">
+    </form>
+
   </body>
 </html>

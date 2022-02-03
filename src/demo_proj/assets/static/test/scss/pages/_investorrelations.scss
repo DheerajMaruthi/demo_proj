@@ -1,0 +1,406 @@
+#investor-relations
+{
+  #contact-banner
+  {
+    height: 750px;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    @media(max-width:767px)
+    {
+      height: 450px;
+      background-image: url('/static/embassy/images/contactus/Contact_us_copy-min.jpg') !important;
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    @media(min-width:992px) and (max-width:1550px)
+    {
+      height: 95vh !important;
+    }
+    .contact-cont-wrapper {
+        text-align: center;
+      h2
+      {
+        font-size: 48px;
+        color:#FFFFFF;
+        font-family: 'Roboto-Medium';
+        margin-bottom: 60px;
+        border-left: 15px solid #0f171d;
+        background-color: #f7941dd1;
+        opacity: 1;
+        padding: 15px 30px;
+        display: inline-block;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+        @media(min-width:576px) and (max-width:768px)
+        {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  #contact-main-tabs
+  {
+    border-bottom: 1px solid #A8A8A8;
+    margin-bottom: 45px;
+    @media(max-width: 767px)
+    {
+      padding: 0px 15px;
+    }
+    @media(max-width:768px)
+    {
+      margin-bottom: 25px;
+    }
+    ul
+    {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      li
+      {
+        padding: 15px 0px 15px 0px;
+        text-transform: uppercase;
+        margin-bottom: -2px;
+        font-family: "Roboto-Regular";
+        margin-right: 25px;
+        @media(max-width:576px)
+        {
+          padding: 8px 0px 5px 0px;
+          margin-right: 20px;
+        }
+        &.active
+        {
+            border-bottom: 4px solid #F7941D;
+            a
+            {
+              color:#040404;
+            }
+        }
+        a
+        {
+          color:#BFBFBF;
+          font-size: 14px;
+          @media(max-width:576px)
+          {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-form
+  {
+    @media(max-width: 767px)
+    {
+      padding: 0px 15px;
+    }
+    .upper-cont-wrapper
+    {
+      width: 80%;
+      @media(min-width:992px) and (max-width:1350px)
+      {
+        width:100%;
+      }
+      @media(max-width:768px)
+      {
+        width: 100%;
+      }
+      @media(min-width:1351px) and (max-width:1653px)
+      {
+        width: 100%;
+      }
+      .investor-relations-wrapper
+      {
+        width: 30.33%;
+        padding-bottom: 45px;
+        padding-right: 20px;
+        @media(max-width:768px)
+        {
+          width: 100%;
+          padding-bottom: 20px;
+        }
+        @media(min-width:769px) and (max-width:992px)
+        {
+          width: 100%;
+        }
+        @media(min-width:992px) and (max-width:1350px)
+        {
+          width:33%;
+        }
+        h2
+        {
+          color:#094369;
+          font-size: 16px;
+          padding-bottom: 5px;
+          margin: 0;
+          font-family: $fontmedium;
+        }
+        p
+        {
+          color:#261C20;
+          font-size: 15px;
+          font-family: $fontregular;
+          a
+          {
+            color:#261C20;
+            font-size: 14px;
+            font-family: $fontmedium;
+            @media(min-width:992px) and (max-width:1380px)
+            {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .add-form-wrapper
+    {
+      width:60%;
+      padding: 35px;
+      background-color: #F6F6F6;
+      margin-bottom: 80px;
+      @media(max-width:768px)
+      {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 45px;
+      }
+      h2
+      {
+        color:#261C20;
+        font-family: 'Roboto-Medium';
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+      h5
+      {
+        color:#261C20;
+        font-size: 14px;
+        font-family: 'Roboto-Regular';
+        padding-bottom: 20px;
+      }
+      .address-form
+      {
+        label
+        {
+          color:#261C20;
+          font-size: 12px;
+          font-family: 'Roboto-Regular';
+        }
+        input
+        {
+          background-color: #FFFFFF;
+          border: 1px solid #707070;
+          color:#261C20;
+          font-size: 14px;
+          border-radius: 0px;
+          width:84%;
+          padding: 15px 10px;
+          &::placeholder
+          {
+            color: #BFBFBF;
+          }
+          @media(max-width:992px)
+          {
+            width: 100%;
+          }
+          @media(min-width:1100px) and (max-width: 1420px)
+          {
+            font-size: 11px;
+          }
+        }
+        #description
+        {
+          padding: 15px 10px;
+          width: 92%;
+          @media(max-width:992px)
+          {
+            width: 100%;
+          }
+        }
+        #email_id
+        {
+          width: 92%;
+          @media(max-width:992px)
+          {
+            width: 100%;
+          }
+        }
+        select
+        {
+          background-color: #FFFFFF;
+          border: 1px solid #a8a8a8;
+          font-size: 14px;
+          border-radius: 0px;
+          width: 92%;
+          padding: 1px 10px;
+          color: #BFBFBF;
+          font-family: 'Roboto-Regular';
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -o-appearance: none;
+           background-image: url(/static/embassy/images/contactus/dropdown.png);
+           background-position: 97% 8px;
+           background-repeat: no-repeat;
+           transition: 0.3s ease-in;
+          option:checked
+          {
+            color:#261c20;
+            padding: 8px 0px;
+            background-color: transparent;
+          }
+          option
+          {
+            color:#261c20;
+            padding: 8px 0px;
+            background-color: transparent;
+          }
+          @media(max-width:992px)
+          {
+            width: 100%;
+          }
+        }
+        button
+        {
+          margin-top: 20px;
+          padding: 10px 30px;
+          background-color: #F7941D;
+          border-radius: 0px;
+          border: none;
+          text-transform: uppercase;
+          color:#fff;
+          font-size: 15px;
+          font-family: 'Roboto-Medium';
+          border:1px solid #F7941D;
+          @media(max-width:576px)
+          {
+            width: 100%;
+          }
+          &:hover
+          {
+            background-color: transparent;
+            transition: 0.3s ease-in;
+            color:#F7941D;
+          }
+        }
+        .captcha-row
+        {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  #contactus
+  {
+    padding-right: 0px !important;
+    .modal-dialog
+    {
+      max-width: 35%;
+      top:20%;
+      @media(max-width:768px)
+      {
+        max-width: 100%;
+      }
+      .modal-content
+      {
+        .modal-header
+        {
+          padding: 0;
+            button.close
+            {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              z-index: 2;
+              outline: 0;
+              opacity: 1;
+              background: transparent;
+              font-size: 25px;
+              font-weight: 100;
+              &:hover
+              {
+                color:#261C20;
+              }
+              span
+              {
+                font-size: 30px;
+                color: #000;
+                opacity: 1;
+                font-weight: 100;
+              }
+            }
+          }
+          .modal-body
+          {
+            height: auto;
+            .modal-cont-wrapper
+            {
+              padding: 40px 30px 30px 30px;
+              text-align: center;
+              h2
+              {
+                color: #094369;
+                font-family: "Roboto-Bold";
+                font-size: 36px;
+                padding-bottom: 5px;
+                @media(max-width:768px)
+                {
+                  font-size: 20px;
+                }
+                @media(min-width:769px) and (max-width:992px)
+                {
+                  font-size: 24px;
+                }
+              }
+              p
+              {
+                color: #2D2D2D;
+                font-family: "Roboto-Regular";
+                line-height: 26px;
+                padding-bottom: 20px;
+                width: 80%;
+                margin: 0 auto;
+                font-size: 16px;
+                @media(max-width:992px)
+                {
+                  font-size: 14px;
+                }
+                @media(max-width:1500px)
+                {
+                  width: 100%;
+                }
+                @media(min-width:992px)
+                {
+                  padding-bottom: 25px;
+                }
+              }
+              button
+              {
+                border:1px solid #FF7315;
+                color:#fff;
+                font-size: 16px;
+                padding: 12px 20px;
+                text-transform: uppercase;
+                background-color: #FF7315;
+                width: 30%;
+                &:hover
+                {
+                  background-color: transparent;
+                  color:#FF7315;
+                  transition: 0.3s ease-in;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+}

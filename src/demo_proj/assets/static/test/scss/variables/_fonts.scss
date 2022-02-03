@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    font-display: swap;
+
+    src: url('/static/embassy/fonts/Roboto-Bold/Roboto-Bold.eot');
+    src: url('/static/embassy/fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Bold/Roboto-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ @font-face {
+  font-family: 'Gotham-Book';
+  font-display: swap;
+
+  src: url('/static/embassy/fonts/Gotham-Book/Gotham-Book.otf') format('opentype'),
+    url('/static/embassy/fonts/Gotham-Book/Gotham-Book') format('woff'),
+    url('/static/embassy/fonts/Gotham-Book/Gotham-Book.eot') format('embedded-opentype'),
+    url('/static/embassy/fonts/Gotham-Book/Gotham-Book.ttf') format('truetype'),
+    url('/static/embassy/fonts/Gotham-Book/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+     font-display: swap;
+    src: url('/static/embassy/fonts/Roboto-Regular/Roboto-Regular-webfont.eot');
+    src: url('/static/embassy/fonts/Roboto-Regular/Roboto-Regular-webfont.eot?#iefix')
+        format('embedded-opentype'),
+        url('/static/embassy/fonts/Roboto-Regular/Roboto-Regular-webfont.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Regular/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Condensed-Regular';
+    font-display: swap;
+    src: url('/static/embassy/fonts/Roboto-Condensed/RobotoCondensed-Regular.eot');
+    src: url('/static/embassy/fonts/Roboto-Condensed/RobotoCondensed-Regular.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Condensed/RobotoCondensed-Regular.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-CondensedRobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('/static/embassy/fonts/Roboto-Medium/Roboto-Medium.eot');
+    src: url('/static/embassy/fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Medium/Roboto-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('/static/embassy/fonts/Roboto-Thin/Roboto-Thin.eot');
+    src: url('/static/embassy/fonts/Roboto-Thin/Roboto-Thin.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Thin/Roboto-Thin.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Thin/Roboto-Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'Roboto-Thin-italic';
+    font-display: swap;
+    src: url('/static/embassy/fonts/Roboto-Thin-italic/Roboto-ThinItalic-webfont.eot');
+    src: url('/static/embassy/fonts/Roboto-Thin-italic/Roboto-ThinItalic-webfont.eot?#iefix')
+        format('embedded-opentype'),
+        url('/static/embassy/fonts/Roboto-Thin-italic/Roboto-ThinItalic-webfont.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Thin-italic/Roboto-ThinItalic-webfont.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Thin-italic/Roboto-ThinItalic-webfont.svg#robotothin_italic')
+        format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    font-display: swap;
+    src: url('/static/embassy/fonts/Roboto-Light/Roboto-Light.eot');
+    src: url('/static/embassy/fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+        url('/static/embassy/fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'),
+        url('/static/embassy/fonts/Roboto-Light/Roboto-Light.svg') format('svg');
+}
+
+
+
+$fontregular:'Roboto-Regular';
+$fontbold:'Roboto-Bold';
+$fontlight:'Roboto-Light';
+$fontmedium:'Roboto-Medium';
+$fontthin:'Roboto-Thin';
+$fontitalic:'Roboto-Italic';
+$fontsemibold:'Roboto-Medium';
+$fontfairmedium:'PlayfairDisplay-Medium';
+$fontfairregular:'PlayfairDisplay-Regular';
+$fontfairbold:'PlayfairDisplay-Bold';

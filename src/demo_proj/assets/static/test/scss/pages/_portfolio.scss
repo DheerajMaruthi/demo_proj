@@ -1,0 +1,104 @@
+
+
+.portfolio--pages {
+    .embassy--portfolio--dash {
+        position: relative;
+        padding-left: 51px;
+        &::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: #F7941D;
+            position: absolute;
+            top: 4px;
+            left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+    h3.embassy--portfolio--dash {
+        &::before {
+            top: 5px;
+        }
+    }
+    .embassy--portfolio--view {
+        padding-left: 50px;
+    }
+    .embassy--portfolio--view {
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+        h3 {
+            font-size: 26px;
+            color:#231F20;
+            position: relative;
+            font-family: $fontmedium;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            @media screen and (max-width: 1301px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .sort-properties {
+        li {
+            a {
+                font-size: 14px;
+                padding:9px 28px;
+                border: 1px solid #A2A2A2;
+                border-radius: 16px;
+                font-family: $fontregular;
+            }
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+        .active {
+            a {
+                border: 1px solid #F7941D;
+                color: #F7941D;
+                font-family: $fontmedium;
+            }
+        }
+    }
+
+    .properties--port {
+        margin-bottom: 30px;
+    .property--content {
+        padding: 15px 0px 0px;
+        h4 {
+            font-size: 18px;
+            font-family: $fontsemibold;
+            color: #231F20;
+        }
+        .loc {
+            color: #231F20;
+            font-size: 16px;
+            display: block;
+            margin: 13px 0px;
+            background: url('/static/embassy/images/pin.png');
+            padding-left: 24px;
+            background-repeat: no-repeat;
+            background-position: left;
+            font-family: $fontmedium;
+        }
+        a {
+            color: #F7941D;
+            text-transform:uppercase;
+            font-size: 16px;
+            font-family: $fontmedium;
+            background: url(/static/embassy/images/colr-arrow1.png);
+            background-position: 93%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 165px;
+            transition: 0.3s ease-in;
+        }
+    }
+
+    }
+}
+
+.is-hidden {
+  display: none;
+}

@@ -1,0 +1,512 @@
+
+
+
+#banner-sec
+{
+  background-image: url(https://via.placeholder.com/1720x500);
+  width: 100%;
+  min-height: 500px;
+  .container.banner-text
+  {
+    position: relative;
+    min-height: 500px;
+    padding: 0px;
+    ul
+    {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 40px 0px;
+      margin: 0px;
+      @media(max-width: 768px)
+      {
+        padding: 20px 10px;
+      }
+      li
+      {
+        padding: 0px 0px;
+        a
+        {
+          color: #8e8e8e;
+        }
+        &::after
+        {
+          content: '|';
+          padding: 0px 10px
+        }
+        &:last-child
+        {
+          a
+          {
+            color: #272727;
+          }
+          &::after
+          {
+            display: none;
+          }
+        }
+      }
+    }
+    .banner-bot-text {
+      position: absolute;
+      bottom: 2%;
+      h2 {
+        padding: 20px 60px;
+        border: 1px solid #FFFFFF;
+        background: #ffffff;
+        @media(max-width: 768px)
+        {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+#Asset--details {
+    background-color:$bgwhite;
+  .container {
+    padding: 30px 0px;
+    @media(max-width:768px) {
+      padding: 20px 0px;
+    }
+    p
+    {
+      line-height: 30px;
+    }
+  }
+}
+
+
+#asset--listing
+{
+background-color:$bgwhite;
+.container
+  {
+    padding: 0px;
+    .nav
+    {
+      justify-content: flex-end;
+    }
+    #myTabContent
+    {
+      padding: 30px 0px;
+      @media(max-width: 992px)
+      {
+        padding: 0;
+      }
+      #all
+      {
+        .row
+        {
+          padding: 30px 0px 0px 0px;
+          @media(max-width:768px)
+          {
+            padding: 0;
+          }
+          img
+          {
+            width: 100%;
+          }
+          .location--text
+          {
+            display: flex;
+            justify-content: space-between;
+            @media(max-width:992px)
+            {
+              display: block;
+              text-align: left;
+            }
+            p
+            {
+              &:first-child
+              {
+                padding: 40px 0px;
+                @media(max-width:992px)
+                {
+                  padding: 10px 0px;
+                }
+              }
+              &:last-child
+              {
+                margin: 40px 0px 0px 0px;
+                @media(max-width:992px)
+                {
+                  margin: 10px 0px 0px 0px;
+                }
+                a
+                {
+                  text-decoration: none;
+                  border: 1px solid $btnbg1;
+                  padding: 10px 30px;
+                  background: $btnbg1;
+                  color: #fff;
+                  &:hover
+                  {
+                    transition: ease-in 0.3s;
+                    background: transparent;
+                    color:#2a2a2a;
+                  }
+                }
+              }
+            }
+          }
+          .location--coord
+          {
+            p
+            {
+              @media(max-width:992px)
+              {
+                margin: 20px 0px 0px 0px;
+                padding-bottom: 20px;
+              }
+            }
+            .fa-map-marker
+            {
+              &::before
+              {
+                content: "\f041";
+                color: #a2a2a2;
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      #bangalore
+      {
+        .row
+        {
+          padding: 30px 0px;
+          img
+          {
+            width: 100%;
+          }
+          .location--text
+          {
+            display: flex;
+            justify-content: space-between;
+            p
+            {
+              &:first-child
+              {
+                padding: 40px 0px;
+              }
+              &:last-child
+              {
+                margin: 40px 0px 0px 0px;
+                a
+                {
+                  text-decoration: none;
+                  border: 1px solid $btnbg1;
+                  padding: 10px 30px;
+                  background: $btnbg1;
+                  color: #fff;
+                  &:hover
+                  {
+                    transition: ease-in 0.3s;
+                    background: transparent;
+                    color:#2a2a2a;
+                  }
+                }
+              }
+            }
+          }
+          .location--coord
+          {
+            .fa-map-marker
+            {
+              &::before
+              {
+                content: "\f041";
+                color: #a2a2a2;
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      #mumbai
+      {
+        .row
+        {
+          padding: 30px 0px;
+          img
+          {
+            width: 100%;
+          }
+          .location--text
+          {
+            display: flex;
+            justify-content: space-between;
+            p
+            {
+              &:first-child
+              {
+                padding: 40px 0px;
+              }
+              &:last-child
+              {
+                margin: 40px 0px 0px 0px;
+                a
+                {
+                  text-decoration: none;
+                  border: 1px solid $btnbg1;
+                  padding: 10px 30px;
+                  background: $btnbg1;
+                  color: #fff;
+                  &:hover
+                  {
+                    transition: ease-in 0.3s;
+                    background: transparent;
+                    color:#2a2a2a;
+                  }
+                }
+              }
+            }
+          }
+          .location--coord
+          {
+            .fa-map-marker
+            {
+              &::before
+              {
+                content: "\f041";
+                color: #a2a2a2;
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      #pune
+      {
+        .row
+        {
+          padding: 30px 0px;
+          img
+          {
+            width: 100%;
+          }
+          .location--text
+          {
+            display: flex;
+            justify-content: space-between;
+            p
+            {
+              &:first-child
+              {
+                padding: 40px 0px;
+              }
+              &:last-child
+              {
+                margin: 40px 0px 0px 0px;
+                a
+                {
+                  text-decoration: none;
+                  border: 1px solid $btnbg1;
+                  padding: 10px 30px;
+                  background: $btnbg1;
+                  color: #fff;
+                  &:hover
+                  {
+                    transition: ease-in 0.3s;
+                    background: transparent;
+                    color:#2a2a2a;
+                  }
+                }
+              }
+            }
+          }
+          .location--coord
+          {
+            .fa-map-marker
+            {
+              &::before
+              {
+                content: "\f041";
+                color: #a2a2a2;
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      #noida
+      {
+        .row
+        {
+          padding: 30px 0px;
+          img
+          {
+            width: 100%;
+          }
+          .location--text
+          {
+            display: flex;
+            justify-content: space-between;
+            p
+            {
+              &:first-child
+              {
+                padding: 40px 0px;
+              }
+              &:last-child
+              {
+                margin: 40px 0px 0px 0px;
+                a
+                {
+                  text-decoration: none;
+                  border: 1px solid $btnbg1;
+                  padding: 10px 30px;
+                  background: $btnbg1;
+                  color: #fff;
+                  &:hover
+                  {
+                    transition: ease-in 0.3s;
+                    background: transparent;
+                    color:#2a2a2a;
+                  }
+                }
+              }
+            }
+          }
+          .location--coord
+          {
+            .fa-map-marker
+            {
+              &::before
+              {
+                content: "\f041";
+                color: #a2a2a2;
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#more--info
+{
+  background: #F8F8F8;
+  h2
+  {
+    text-align: center;
+    color:#000000;
+    padding: 30px 0px 10px 0px;
+    margin: 0px;
+  }
+  p
+  {
+    text-align: center;
+    line-height: 25px;
+    color:#000000;
+    padding: 0px 0px 30px 0px;
+    &:last-child
+    {
+      padding-bottom: 45px;
+      a
+      {
+        text-decoration: none;
+        border: 1px solid $btnbg1;
+        padding: 10px 30px;
+        background: $btnbg1;
+        color: #fff;
+        &:hover
+        {
+          transition: ease-in 0.3s;
+          background: transparent;
+          color:#2a2a2a;
+        }
+      }
+    }
+  }
+}
+
+#other--assets
+{
+  .container
+  {
+    padding: 0px 0px 45px 0px;
+    h2
+    {
+      width: 100%;
+      padding: 30px 15px;
+      margin: 0px;
+    }
+    a
+    {
+      img
+      {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding-right: 20px;
+        @media(max-width:992px)
+        {
+          padding-right: 0px;
+        }
+      }
+      p
+      {
+        text-align: center;
+        text-decoration: none;
+        color:#000000;
+        padding: 10px 0px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+#assetsTab {
+    margin-bottom: 40px;
+    border-bottom: 0px;
+    li{
+    }
+    a {
+        border: 0px;
+        font-family: $fontregular;
+        font-size: 18px;
+        border-bottom: 1px solid #231f20;
+    }
+    a.active{
+        border-bottom: 3px solid #f7941d;
+        font-family:$fontbold !important;
+        color: #f7941d !important;
+    }
+}
+#assetsTabContent {
+    .col-lg-6 {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+        .loc--as {
+            padding: 20px;
+        }
+        .location--text {
+            p {
+                font-family: $fontbold;
+                color: #231f20;
+                a {
+                    float: right;
+                    background-color: #f7941d;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    color: #fff;
+                }
+            }
+        }
+        .location--coord {
+            margin-top: 10px;
+            i {
+                color: #f7941d;
+                margin-right: 10px;
+            }
+        }
+    }
+
+}

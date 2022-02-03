@@ -1,0 +1,184 @@
+
+#bodmainban {
+  .banner--wrapper {
+    position: relative;
+    @include bannerwrapper;
+
+    .hammenu {
+      @include navmenu;
+    }
+
+    .banner--head {
+      position: absolute;
+      bottom: 10px;
+      @media screen and (min-width: 991.98px) {
+        width: 40%;
+      }
+
+      .banner--heading {
+        background-color: $bgwhite;
+        padding: 5px 20px;
+      }
+      @media screen and (min-width: 1501.98px) {
+        h1 {
+          font-size: 50px;
+          text-shadow: 7px 7px 6px #444444;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+#bodmainsec {
+  .exepeoplebox {
+    .appointdiv {
+      text-align: center;
+      margin: auto;
+      .aletter{
+            padding: 15px 10px;
+      }
+    }
+    @media(min-width:576px) {
+      .modal-dialog {
+        min-width: 60% !important;
+      }
+    }
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          border: none !important;
+        }
+      }
+    }
+  }
+}
+
+.exepeoplebox {
+  min-height: 150px;
+  width: 100%;
+
+  .exeimgborder {
+    border: 1px solid #000;
+
+    .exeimg {
+      width: 100%;
+    }
+  }
+
+  .exepeopletextbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          text-align: left;
+        }
+      }
+
+      .modal-body {
+        overflow-y: scroll;
+
+        .exeimgdes {
+          float: left;
+          margin-right: 20px;
+        }
+
+        .descriptionexe {
+          text-align: left;
+        }
+
+        .maindesc {
+          text-align: justify;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+#boardresponsibility {
+  .boardrestext{
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .respeoplebox {
+    .appointdiv {
+      text-align: center;
+      margin: auto;
+      .aletter{
+            padding: 15px 10px;
+      }
+    }
+    @media(min-width:576px) {
+      .modal-dialog {
+        min-width: 60% !important;
+      }
+    }
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          border: none !important;
+        }
+      }
+    }
+  }
+  .respeoplebox {
+    min-height: 150px;
+    width: 100%;
+
+    .exeimgborder {
+      border: 1px solid #000;
+
+      .exeimg {
+        width: 100%;
+      }
+    }
+
+    .exepeopletextbox {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .modal-title {
+            text-align: left;
+          }
+        }
+
+        .modal-body {
+          overflow-y: scroll;
+
+          .exeimgdes {
+            float: left;
+            margin-right: 20px;
+          }
+
+          .descriptionexe {
+            text-align: left;
+          }
+
+          .maindesc {
+            text-align: justify;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.spacing-sec {
+  padding-top: 40px;
+}

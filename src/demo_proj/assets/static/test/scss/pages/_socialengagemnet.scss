@@ -1,0 +1,1232 @@
+
+
+
+#about-social {
+  #about-social-banner-wrapper {
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat !important;
+    @media(max-width:767px)
+    {
+      height: 450px;
+      background-repeat: no-repeat !important;
+      background-image: url('/static/embassy/images/about-us/banners/Social_Engagementmob-min.jpg') !important;
+      background-size: cover;
+      background-position: top center;
+    }
+    @media(min-width:991px) and (max-width:1550px)
+    {
+      height: 95vh !important;
+    }
+    .about-social-head-wrapper {
+      position: absolute;
+      bottom: 60px;
+      right: 0px;
+      left: 0px;
+      margin: 0 auto;
+      text-align: center;
+      @media(max-width:576px)
+      {
+        width: 95%;
+      }
+      @media(min-width: 767px) and (max-width:768px)
+      {
+        bottom: 40px;
+      }
+      h2 {
+        color:#fff;
+        font-size: 48px;
+        border-left: 15px solid #0f171d;
+        background-color: #f7941dd1;
+        opacity: 1;
+        padding: 15px 30px;
+        display: inline-block;
+        @media(max-width:576px) {
+          font-size: 22px;
+        }
+        @media(max-width:768px){
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+.social-two {
+    padding: 0px 0px 35px 0px;
+    @media(max-width:768px)
+    {
+      padding: 35px 0px 10px 0px;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+      padding: 0px 0px 20px 0px;
+    }
+    @media(min-width:769px) and (max-width:991px)
+    {
+      padding: 30px 0px 0px 0px;
+    }
+    h3 {
+        color: #094369;
+        font-size: 36px;
+        font-family: $fontmedium;
+    }
+    .social-two-first {
+        h3 {
+            font-size: 36px;
+            font-family: $fontregular;
+            color: #261C20;
+        }
+        p {
+            color: #261C20;
+            font-size: 22px;
+            .dotted {
+                font-family: $fontmedium;
+                position: relative;
+                padding-left: 25px;
+                margin-left: 10px;
+                &::before {
+                    content: '';
+                        position: absolute;
+                        width: 7px;
+                        left: 0;
+                        top: 11px;
+                        height: 7px;
+                        background-color: #261C20;
+                        border-radius: 50%;
+                        padding: 4px;
+                }
+            }
+        }
+        ul
+        {
+          li {
+            font-size: 26px;
+            list-style: initial;
+            padding: 5px 0px;
+            color: #261C20;
+            font-family:$fontmedium;
+          }
+        }
+    }
+
+
+    .social-two-head
+    {
+      h3
+      {
+        color:#094369;
+        font-size: 36px;
+        font-family: $fontmedium;
+        padding-bottom: 15px;
+        margin: 0;
+        @media(max-width:767px)
+        {
+          padding-bottom: 12px;
+        }
+        @media(min-width:767px) and (max-width:769px)
+        {
+          padding-top: 30px;
+        }
+      }
+      p
+      {
+        font-size: 16px;
+        font-family: $fontregular;
+        color: #261C20;
+        width:100%;
+        padding-bottom: 40px;
+        @media(max-width:767px)
+        {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .social-two-icons
+    {
+      h3
+      {
+        color:#094369;
+        font-size: 36px;
+        font-family: $fontmedium;
+        padding-bottom: 15px;
+      }
+      .social-icons-wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+        width: 100%;
+        flex-wrap: wrap;
+        @media screen and (min-width: 1401px) {
+            width: 100%;
+        }
+        justify-content: space-between;
+        .social-icons-inner-wrapper {
+            background-repeat: no-repeat !important;
+            background-size: 50px !important;
+            background-position: left !important;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            display: block;
+            text-align: center;
+            background-color: #094369;
+            border: 1px solid #707070;
+            width: 24%;
+            &:last-child
+            {
+              @media(max-width:767px)
+              {
+                margin-bottom: 40px;
+              }
+            }
+            @media(max-width:767px)
+            {
+              width: 100%;
+              margin-bottom: 30px;
+            }
+            @media(min-width:768px) and (max-width:991px)
+            {
+              width: 49%;
+              margin-bottom: 15px;
+            }
+            .img {
+                text-align: center;
+            }
+            h2 {
+                padding-left: 0px;
+                color: #fff;
+                font-size: 22px;
+                font-family:$fontmedium;
+                width: unset;
+                opacity: 100%;
+                padding-top: 20px;
+            }
+        }
+      }
+    }
+
+    .vision-row
+    {
+      padding: 80px 0px 30px 0px;
+      align-items: center;
+      @media(max-width:767px)
+      {
+        padding: 0px;
+      }
+      @media(min-width:767px) and (max-width:769px)
+      {
+        padding: 0px 0px 10px 0px !important;
+      }
+      @media(min-width:768px) and (max-width:991px)
+      {
+            padding: 15px 0px 10px 0px;
+      }
+      .vision-wrapper
+      {
+        @media(max-width:991px)
+        {
+          order: 2;
+          padding-bottom: 30px;
+        }
+        @media(min-width:767px) and (max-width:769px)
+        {
+          padding-bottom: 0px;
+        }
+      }
+      .vision-inner {
+          padding-left: 40px;
+          @media(max-width:767px)
+          {
+          padding:  0px 15px 20px 15px;
+          }
+          @media(min-width:768px) and (max-width:991px)
+          {
+            padding:  15px 15px 15px 15px;
+          }
+          h5 {
+              font-size: 36px;
+              font-family: $fontmedium;
+              @media(max-width:575px)
+              {
+                font-size: 22px;
+              }
+              @media(min-width:576px) and (max-width:767px)
+              {
+                font-size: 26px;
+              }
+          }
+          p {
+              color: #261C20;
+              font-size: 16px;
+              @media screen and (min-width: 991px) {
+                  width: 100%;
+              }
+          }
+      }
+    }
+}
+
+.social-education {
+    h3 {
+        color:#261C20;
+        font-size: 36px;
+        font-family: $fontmedium;
+    }
+    p {
+        font-size: 16px;
+        color: #261C20;
+        margin-bottom: 15px;
+        &.found-links
+        {
+          @media(max-width: 768px)
+          {
+                margin-bottom: 30px;
+          }
+        }
+    }
+    h4 {
+        font-family: $fontmedium;
+        color: #261C20;
+        margin: 5px 0px 10px;
+    }
+    .found {
+        font-family: $fontmedium;
+        font-size: 14px;
+        color: #261C20;
+        margin-bottom: 0px;
+
+    }
+    .found-links {
+        a {
+            text-transform: uppercase;
+            font-family: $fontmedium;
+            font-size: 14px;
+            color: #261C20;
+            margin-right:20px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #FF8E43;
+                left: 0;
+                right: 0;
+                bottom: -4px;
+            }
+        }
+    }
+}
+
+.social-edu-carousel
+{
+  @media(max-width:767px)
+  {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.hor-line {
+    border-bottom:1px solid rgba(112,112,112,0.5);
+    margin:60px 0px 60px;
+    @media(max-width: 767px)
+    {
+      margin: 24px 0px 30px;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+          margin: 45px 0px 30px;
+    }
+}
+
+.social-four {
+    margin-bottom: 60px;
+    @media(max-width:768px)
+    {
+      margin-bottom: 10px;
+    }
+    h3 {
+        color:#261C20;
+        font-size: 36px;
+        font-family: $fontmedium;
+        margin-bottom: 40px;
+        @media(max-width:767px)
+        {
+          margin-bottom: 26px;
+        }
+    }
+    .social-inter-wrapper {
+        .img-text {
+            align-self: center;
+            p {
+                color: #261C20;
+                font-size: 18px;
+                padding-left: 15px;
+                font-family: $fontregular;
+            }
+        }
+    }
+    .mb-5 {
+        @media screen and (min-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 991px) and (max-width: 1301px){
+            max-width: 33% !important;
+            width: 33% !important;
+            flex: 33% !important;
+        }
+    }
+}
+
+.social-five {
+    background-color: #094369;
+    padding: 80px 0px;
+    @media(max-width:767px)
+    {
+      padding: 40px 0px 40px 0px;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+          padding: 30px 0px;
+    }
+    .row
+    {
+      align-items: center;
+    }
+    h3 {
+        color:#ffffff;
+        font-size: 36px;
+        font-family: $fontmedium;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.social-five {
+    margin: 50px 0px 80px;
+    @media(max-width:768px)
+    {
+      margin: 0px 0px 40px;
+    }
+}
+
+.social-six {
+    #healthTab {
+    border: 1px solid #BFBFBF;
+    padding: 20px 40px;
+    @media(max-width:768px)
+    {
+      margin-bottom: 30px !important;
+    }
+    @media screen and (max-width: 1501px) {
+        padding: 20px 20px;
+
+    }
+    li {
+        padding:12px 0px 21px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #BFBFBF;
+            margin-bottom: 10px;
+        }
+        a {
+            display: flex;
+            width: 100%;
+            font-size: 17px;
+            font-family: $fontregular;
+            background: url(/static/embassy/images/colr-arrow1.png);
+            background-position:95%;
+            transition: 0.3s ease-out;
+            &:hover
+            {
+                    transition: 0.3s ease-out;
+                    background-position: 100%;
+            }
+            @media screen and (max-width: 1501px) {
+                font-size: 13px;
+            }
+            @media screen and (max-width: 1201px) {
+                font-size: 11px;
+            }
+            background-repeat: no-repeat !important;
+            span {
+                padding-right: 15px;
+            }
+            label {
+                align-self: center;
+                width: 60%;
+                word-break: break-word;
+                margin-bottom: 0px;
+                @media(max-width:768px)
+                {
+                  padding-right: 20px;
+                  width: 70%;
+                }
+                @media(min-width: 1250px)
+                {
+                  width: 70% !important;
+                }
+            }
+            transition: 0.3s ease-in;
+            &:hover
+            {
+              color:#094369;
+            }
+        }
+        &.active
+        {
+          label {
+          color:#094369;
+        }
+        &:hover
+        {
+          label {
+          color:#094369;
+        }
+        }
+      }
+    }
+    }
+    #healthTabContent {
+        h4 {
+            margin-top: 15px;
+            font-size: 24px;
+            font-family: $fontmedium;
+            color: #261C20;
+        }
+        p {
+            color: #261C20;
+            margin: 15px 0px;
+            font-size: 16px;
+        }
+    }
+}
+
+.pre-social-seven
+{
+  .hor-line
+  {
+    @media(max-width:767px)
+    {
+      margin: 24px 0px 20px !important;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+      margin: 30px 0px 60px;
+    }
+  }
+}
+
+.social-seven {
+    h3 {
+        color:#261C20;
+        font-size: 36px;
+        font-family: $fontmedium;
+        margin-bottom: 20px;
+        @media(max-width:768px)
+        {
+          margin-top: 0px;
+          font-size: 32px;
+        }
+    }
+
+    p {
+        color: #261C20;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    a {
+        color: #261C20;
+        text-transform: uppercase;
+        border-bottom:2px solid #F7941D;
+        &:hover
+        {
+          color:#F7941D;
+          transition: 0.3s ease-in;
+        }
+    }
+    .social-seven-conten
+    {
+      @media(max-width: 768px)
+      {
+        margin-bottom: 30px;
+      }
+    }
+}
+
+.post-social-seven
+{
+  .hor-line
+  {
+    @media(max-width:767px)
+    {
+      margin: 40px 0px 30px !important;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+          margin: 40px 0px 60px !important;
+    }
+  }
+}
+
+.social-eight {
+    margin-bottom: 70px;
+    @media(max-width: 767px)
+    {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+      margin-bottom: 48px;
+    }
+    h3 {
+        color:#261C20;
+        font-size: 36px;
+        font-family: $fontmedium;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #261C20;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+.social-nine{
+    padding: 50px 0px 60px 0px;
+    background-color: #094369;
+    @media(max-width:768px)
+    {
+      padding: 30px 0px 40px 0px;
+    }
+    h3 {
+        color:#fff;
+        font-size: 36px;
+        font-family: $fontmedium;
+        margin-bottom: 20px;
+    }
+    .counter {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        @media(max-width:767px)
+        {
+          padding-bottom: 15px;
+        }
+        span {
+            align-self: center;
+            display: inline-block;
+        }
+        .value {
+            padding-right: 10px;
+            vertical-align: bottom;
+            font-size: 36px;
+            font-family: $fontregular;
+            color: #FF8E43;
+            @media(min-width:769px) and (max-width:1100px)
+            {
+              font-size: 26px;
+            }
+        }
+        .counter-text {
+            color: #fff;
+            font-size: 16px;
+            @media screen and (max-width: 1401px) {
+                font-size: 15px;
+            }
+        }
+    }
+    .corporate-content {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: rgba(9, 67, 105, 0.8);
+        opacity: 0.8;
+        color: #fff;
+        padding: 19px 32px;
+        span {
+            color: #fff;
+            font-size: 16px;
+            font-family: $fontmedium;
+        }
+        p {
+            color: #fff;
+            margin: 10px 0px 15px;
+            opacity: 100%;
+            font-size: 16px;
+        }
+        a {
+            color: #fff;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-bottom: 2px solid #FF8E43;
+        }
+    }
+
+    .owl-dots .owl-dot{
+        background-color: #fff;
+    }
+    .owl-dots .active{
+        background-color: #FF7315;
+    }
+    .social-nine-mar
+    {
+      @media(max-width:767px)
+      {
+        margin-top: 15px !important;
+      }
+    }
+}
+
+.social-ten  {
+    margin: 30px 0px 0px;
+    @media(max-width:768px)
+    {
+      margin: 15px 0px 0px;
+    }
+    .partner-wrapper {
+        background: url(/static/embassy/images/about-us/social-engagement/Partner.png);
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        padding: 50px;
+        color: #fff;
+        margin: 20px 0px;
+        @media(max-width:768px)
+        {
+          display: block !important;
+          text-align: center;
+          margin: 20px 0px 5px 0px;
+        }
+        @media(max-width:375px)
+        {
+          padding: 15px 30px 30px 30px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 36px;
+            font-family: $fontmedium;
+        }
+        p {
+            color: #fff;
+            font-size: 16px;
+            @media(max-width:768px)
+            {
+              padding-bottom: 30px;
+            }
+        }
+    }
+
+    .cnt-btn {
+        color: #fff;
+        background-color: #FF8E43;
+        font-size: 18px;
+        font-family: $fontmedium;
+        padding: 14px 25px;
+        float: right;
+        text-transform: uppercase;
+        @media(max-width:768px)
+        {
+          float: unset !important;
+        }
+        @media(max-width:375px)
+        {
+          font-size: 14px;
+          padding: 8px 25px;
+        }
+    }
+}
+
+.post-social-ten
+{
+  .hor-line {
+    @media(max-width: 767px)
+    {
+          margin: 30px 0px 25px;
+    }
+    @media(min-width:767px) and (max-width:769px)
+    {
+        margin: 35px 0px 30px;
+    }
+        margin: 30px 0px 40px;
+  }
+}
+#corporate {
+    .owl-dots {
+        margin-top: 30px;
+        @media(max-width:767px)
+        {
+          margin-top: 10px;
+        }
+    }
+}
+.seven-eleven
+{
+  padding: 0px 0px 80px 0px;
+  .media-head-wrapper
+  {
+    padding: 0px 0px 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width:768px)
+    {
+      padding: 0px 0px 20px 0px;
+    }
+    h3
+    {
+      font-size: 36px;
+      color:#261C20;
+      @media(max-width:576px)
+      {
+        font-size: 22px;
+      }
+      @media(min-width:577px) and (max-width:768px)
+      {
+        font-size: 26px;
+      }
+    }
+    select
+    {
+      background: #F8F8F8;
+      padding: 15px 20px;
+      color: #261C20;
+      font-size: 14px;
+      border: 1px solid #f7f7f7;
+      border-radius: 0;
+    }
+  }
+  #Engagement-carousel
+  {
+    width:100%;
+    .carousel-indicators
+    {
+      bottom: -60px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      li
+      {
+        margin: 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #261c20;
+        &.active
+        {
+          border: 1px solid #f7941d;
+          width: 30px;
+          height: 8px;
+          border-radius: 7px;
+          background-color: #f7941d;
+        }
+      }
+    }
+    .car-img-wrapper {
+      padding-bottom: 30px;
+      margin: 0 auto;
+      @media(max-width:768px)
+      {
+        padding-bottom: 0px;
+      }
+      @media(max-width:992px)
+      {
+        text-align: center;
+      }
+      img {
+        @media(max-width:992px) {
+          padding: 10px 0px;
+        }
+        @media(min-width:1851px)
+        {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  .video-cont
+  {
+    display: none;
+  }
+}
+
+}
+@media screen and (min-width:576px) {
+    .select-sort {
+        float: right;
+        text-align: right;
+    }
+}
+.social--banner {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    @media(min-width:1201px)
+    {
+      height: 350px !important;
+    }
+}
+
+.colored-img {
+    display: none;
+}
+.social-six #healthTab li:hover .normal-image{
+    display: none;
+}
+.social-six #healthTab li:hover .colored-img{
+    display: block;
+}
+
+
+
+#Partner-wrapper
+{
+  padding-right: 0px !important;
+  .modal-dialog
+  {
+    max-width: 35%;
+    top:20%;
+    @media(max-width:768px)
+    {
+      max-width: 100%;
+    }
+    @media(min-width:1201px)
+    {
+      max-width: 50%;
+    }
+    .modal-content
+    {
+      .modal-header
+      {
+        padding: 0;
+          button.close
+          {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+            outline: 0;
+            opacity: 1;
+            background: transparent;
+            font-size: 25px;
+            font-weight: 100;
+            &:hover
+            {
+              color:#261C20;
+            }
+            span
+            {
+              font-size: 30px;
+              color: #000;
+              opacity: 1;
+              font-weight: 100;
+            }
+          }
+        }
+        .modal-body
+        {
+          height: auto;
+          padding: 0;
+          .modal-cont-wrapper
+          {
+            padding: 0;
+            text-align: center;
+            h2
+            {
+              color: #094369;
+              font-family: $fontmedium;
+              font-size: 26px;
+              padding-bottom: 10px;
+              text-align: left;
+              @media(max-width:768px)
+              {
+                font-size: 20px;
+              }
+              @media(min-width:769px) and (max-width:992px)
+              {
+                font-size: 24px;
+              }
+            }
+            p
+            {
+              color: #2D2D2D;
+              font-family: "Roboto-Regular";
+              line-height: 26px;
+              padding-bottom: 0px;
+              width: 100%;
+              font-size: 16px;
+              text-align: justify;
+              @media(max-width:992px)
+              {
+                font-size: 14px;
+              }
+              @media(max-width:1500px)
+              {
+                width: 100%;
+              }
+              @media(min-width:992px)
+              {
+                padding-bottom: 0px;
+              }
+            }
+            button
+            {
+              border:1px solid #FF7315;
+              color:#fff;
+              font-size: 16px;
+              padding: 12px 20px;
+              text-transform: uppercase;
+              background-color: #FF7315;
+              width: 30%;
+              &:hover
+              {
+                background-color: transparent;
+                color:#FF7315;
+                transition: 0.3s ease-in;
+              }
+            }
+            .partner-form {
+                background-color: #F8F8F8;
+                padding: 55px 55px 40px 55px;
+                @media screen and (max-width: 1301px) {
+                    padding: 20px;
+                }
+                h4 {
+                    font-size: 22px;
+                    font-family: $fontmedium;
+                    color: #261C20;
+                    margin-bottom: 5px;
+                }
+                 p{
+                     color: #585858;
+                     font-family: $fontregular;
+                     font-size: 14px;
+                     margin-bottom: 20px;
+                 }
+                 label {
+                     font-size: 15px;
+                     color: #261C20;
+                     font-family: $fontregular;
+                     display: block;
+                     margin-bottom: 10px;
+                     text-align: left;
+                 }
+                 .form-control {
+                     color: #BCBCBC;
+                     font-size: 14px;
+                     font-family: $fontregular;
+                     height: 45px;
+                     background-color: #fff;
+                     padding: 10px 20px;
+                     border-radius: 0px;
+                     border: 1px solid #CCCCCC;
+                     &::placeholder
+                     {
+                       color:#BFBFBF;
+                     }
+                 }
+                 .form-control:focus { /* Internet Explorer 10-11 */
+                   color: #261C20;
+                 }
+                 .form-control:active { /* Internet Explorer 10-11 */
+                   color: #261C20;
+                 }
+                .form-control::-webkit-input-placeholder { /* Edge */
+                  color: #261C20;
+                }
+
+                .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                  color: #261C20;
+                }
+
+                .form-control::placeholder {
+                  color: #261C20;
+                }
+                 .col-lg-6 {
+                     margin-bottom: 20px;
+                     @media(max-width:768px)
+                     {
+                       padding: 0;
+                     }
+                 }
+                 .col-12
+                 {
+                   @media(max-width:768px)
+                   {
+                     padding: 0;
+                   }
+                 }
+                 .btn-sumit {
+                     border: 1px solid #FF8E43;
+                     background-color: #FF8E43;
+                     font-size: 14px;
+                     font-family: $fontmedium;
+                     border-radius: 0px;
+                     color: #fff;
+                     text-transform: uppercase;
+                     padding: 12px 40px;
+                     transition: 0.3s ease-in;
+                     @media(max-width:1200px)
+                     {
+                       width: 100%;
+                     }
+                     &:hover {
+                         background-color: inherit;
+                         color:#FF8E43;
+                     }
+                 }
+                 select {
+                     background: url(/static/embassy/images/down-arrow-one.png);
+                     background-repeat: no-repeat;
+                     background-position: 93%;
+                     -webkit-appearance: none;
+                 }
+                 .submit-row
+                 {
+                   text-align: left;
+                   @media(min-width:1301px)
+                   {
+                     padding-top: 20px;
+                   }
+                 }
+            }
+          }
+        }
+      }
+  }
+}
+
+
+
+
+
+.social-engagement-pop
+{
+  padding-right: 0px !important;
+  .modal-dialog
+  {
+    max-width: 35%;
+    top:20%;
+    @media(max-width:768px)
+    {
+      max-width: 100%;
+    }
+    @media(min-width:1201px)
+    {
+      max-width: 50%;
+    }
+    .modal-content
+    {
+      .modal-header
+      {
+        padding: 0;
+          button.close
+          {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+            outline: 0;
+            opacity: 1;
+            background: transparent;
+            font-size: 25px;
+            font-weight: 100;
+            &:hover
+            {
+              color:#261C20;
+            }
+            span
+            {
+              font-size: 30px;
+              color: #000;
+              opacity: 1;
+              font-weight: 100;
+            }
+          }
+        }
+        .modal-body
+        {
+          height: auto;
+          .modal-cont-wrapper
+          {
+            padding: 20px 30px 30px 30px;
+            text-align: center;
+            h2
+            {
+              color: #094369;
+              font-family: $fontmedium;
+              font-size: 26px;
+              padding-bottom: 10px;
+              text-align: left;
+              @media(max-width:768px)
+              {
+                font-size: 20px;
+              }
+              @media(min-width:769px) and (max-width:992px)
+              {
+                font-size: 24px;
+              }
+            }
+            p
+            {
+              color: #2D2D2D;
+              font-family: "Roboto-Regular";
+              line-height: 26px;
+              padding-bottom: 0px;
+              width: 100%;
+              font-size: 16px;
+              text-align: justify;
+              @media(max-width:992px)
+              {
+                font-size: 14px;
+              }
+              @media(max-width:1500px)
+              {
+                width: 100%;
+              }
+              @media(min-width:992px)
+              {
+                padding-bottom: 0px;
+              }
+            }
+            button
+            {
+              border:1px solid #FF7315;
+              color:#fff;
+              font-size: 16px;
+              padding: 12px 20px;
+              text-transform: uppercase;
+              background-color: #FF7315;
+              width: 30%;
+              &:hover
+              {
+                background-color: transparent;
+                color:#FF7315;
+                transition: 0.3s ease-in;
+              }
+            }
+          }
+        }
+      }
+  }
+}
+.readmree, .readlss {
+  color: #261C20;
+  text-transform: uppercase;
+  border-bottom: 2px solid #F7941D;
+  font-family: $fontmedium;
+  &:hover
+  {
+    color:#F7941D;
+    transition: 0.3s ease-in;
+  }
+}

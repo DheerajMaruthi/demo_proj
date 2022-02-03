@@ -1,0 +1,859 @@
+#eventspresentation-wrapper
+{
+  #navbar
+  {
+      @media(max-width:992px)
+      {
+        display: none !important;
+      }
+  }
+
+  #investor-banner-wrapper {
+      position: relative;
+      .investor--banner {
+          background-size:cover;
+          background-position: center;
+          height: 750px;
+          margin-bottom: 160px !important;
+          position: relative;
+          background-repeat: no-repeat !important;
+          @media screen and (max-width:991px) {
+            margin-bottom: 15px !important;
+            position: initial;
+            height: 300px !important;
+            background-position: top !important;
+          }
+          @media(min-width:992px) and (max-width: 1400px)
+          {
+            background-position: center !important;
+            background-image: url('/static/embassy/images/investors/investorbanner_1440x637.png') !important;
+          }
+          @media(min-width:1681px) and (max-width:1900px)
+          {
+            margin-bottom: 130px !important;
+          }
+          @media(min-width:1901px)
+          {
+            margin-bottom: 160px !important;
+          }
+      }
+    @media (max-width:992px) {
+      margin-bottom: 65px;
+    }
+    .container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -128px !important;
+      max-width: 70%;
+      @media(min-width:1681px)
+      {
+        bottom: -95px !important;
+      }
+      @media(min-width:992px) and (max-width:1600px) {
+          max-width: 86% !important;
+      }
+      @media screen and (max-width:991px) {
+          bottom: -85px;
+          max-width: 95%;
+          position: initial;
+      }
+      @media(max-width:576px) {
+            max-width: 100%;
+      }
+      h1
+      {
+        color:#fff;
+        font-size: 48px;
+        text-shadow: 7px 7px 6px #444444;
+        @media(max-width:991px) {
+          color: #094369;
+          text-align: center;
+          margin-bottom: 15px;
+          text-shadow: none !important;
+        }
+        @media(max-width:576px)
+        {
+          font-size: 36px;
+          text-align: left;
+        }
+        @media(min-width:576px) and (max-width:768px)
+        {
+          text-align: left;
+        }
+      }
+      .share-wrapper
+      {
+        background: rgba(38, 28, 32, 0.9);
+        padding: 20px 0px 15px 0px;
+        @media(min-width:576px) and (max-width:768px)
+        {
+          padding: 15px 0px 15px 0px;
+        }
+        @media(min-width:769px) and (max-width:992px)
+        {
+          padding: 15px 0px 15px 0px;
+        }
+        @media(min-width:992px) and (max-width:1100px)
+        {
+          padding: 15px 0px 15px 0px;
+        }
+        @media(min-width:1101px)
+        {
+          padding: 12px 20px 10px 0px;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+        .share-inner-wrapper
+        {
+          display: flex;
+          justify-content: flex-end;
+          width: 64%;
+          align-items: center;
+          @media(max-width:576px) {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+          @media(min-width:576px) and (max-width:768px)
+          {
+                padding: 0px 10px;
+                display: block;
+                text-align: center;
+                width: 100%;
+          }
+          @media(min-width:768px) and (max-width:992px)
+          {
+            justify-content: center;
+            padding: 0px 10px;
+            width: 100%;
+          }
+          @media(min-width:992px) and (max-width:1100px)
+          {
+            padding: 0px 10px;
+            justify-content: center;
+            width: 100%;
+          }
+          @media(min-width:1101px)
+          {
+            width: 70%;
+          }
+          p
+          {
+            color:#fff;
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            span
+            {
+              color:#F39C38;
+              display: inherit;
+              align-self: center;
+            }
+            @media(max-width:768px)
+            {
+              justify-content: center;
+            }
+          }
+        }
+        .might-data
+        {
+          padding-left: 10px;
+          display: block;
+          margin-top: -2px;
+          @media(max-width: 992px)
+          {
+            margin: 0 auto;
+            text-align: center;
+          }
+          @media(min-width:992px) and (max-width:1100px)
+          {
+            text-align: center;
+            padding-top: 5px;
+          }
+        }
+      }
+      #investor-overview
+      {
+        .carousel-indicators
+        {
+          bottom: -27px;
+          display: flex;
+          align-items: center;
+          @media(max-width:992px)
+          {
+            bottom: -55px;
+          }
+          li {
+            margin: 4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgba(38, 28, 32, 1);
+            &.active
+            {
+              border: 1px solid #f7941d;
+              width: 30px;
+              height: 8px;
+              border-radius: 7px;
+              background-color: #f7941d;
+            }
+          }
+        }
+        .car-cont-wrapper {
+            .port-folio-wrapper {
+              background: rgba(9, 67, 105, 0.9);
+              padding: 0px 20px 10px 20px !important;
+              @media(min-width:1201px) and (max-width:1320px)
+              {
+                  min-height: 160px !important;
+              }
+              @media(min-width:1201px) and (max-width:1600px)
+              {
+                min-height: 135px;
+              }
+              h3
+              {
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 26px !important;
+                padding:12px 0px;
+                font-family: $fontmedium;
+                @media(max-width:576px)
+                {
+                  margin: 0;
+                  padding: 20px 0px 12px 0px;
+                }
+                @media(min-width:1201px) and (max-width:1600px)
+                {
+                  font-size: 20px !important;
+                  padding: 7px 0px;
+                }
+              }
+              .icon-wrapper
+              {
+                @media(max-width:1300px)
+                {
+                  height: unset !important;
+                }
+                @media(min-width:1301px) and (max-width:1689px)
+                {
+                    height: unset !important;
+                }
+                @media(min-width:1690px)
+                {
+                  height: 85px !important;
+                }
+                .icon-inner-wrapper
+                {
+                  display: flex;
+                  text-align: left;
+                  align-items: flex-start;
+                  justify-content: center;
+                  @media(max-width:576px)
+                  {
+                    display: block;
+                    text-align: center;
+                    margin: 20px auto;
+                  }
+                  @media(min-width:576px) and (max-width:768px)
+                  {
+                    display: block;
+                    text-align: center;
+                    margin: 20px auto;
+                  }
+                  @media(min-width:768px) and (max-width:992px)
+                  {
+                    display: block;
+                    text-align: center;
+                    margin: 10px auto;
+                  }
+                  @media(min-width:993px) and (max-width:1200px)
+                  {
+                    display: block;
+                    text-align: center;
+                  }
+                  @media(min-width:1201px) and (max-width:1680px)
+                  {
+                    padding-bottom: 5px;
+                    align-items: end;
+                  }
+                  img
+                  {
+                    padding-right: 20px;
+                    @media(max-width:576px)
+                    {
+                      padding-right: 0px;
+                      padding-bottom: 10px;
+                    }
+                    @media(min-width:576px) and (max-width:768px)
+                    {
+                      padding-right: 0px;
+                      padding-bottom: 10px;
+                    }
+                    @media(min-width:769px) and (max-width:992px)
+                    {
+                      padding-right: 0px;
+                      padding-bottom: 10px;
+                    }
+                    @media(min-width:992px) and (max-width:1200px)
+                    {
+                      padding-right: 0px;
+                      padding-bottom: 15px;
+                    }
+                    @media(min-width:1201px) and (max-width:1600px)
+                    {
+                      transform: scale(0.9);
+                    }
+                  }
+                  .icon-inner-cont-wrapper
+                  {
+                    h2
+                    {
+                      padding: 0px 0px 0px 0px;
+                      color: #fff;
+                      margin: 0;
+                      font-size: 26px;
+                      padding-bottom: 0px;
+                      font-family: $fontregular;
+                      @media(min-width:576px) and (max-width:768px)
+                      {
+                        padding: 10px 0px 0px 0px;
+                        color: #fff;
+                        margin: 0;
+                        text-align: center;
+                        font-size: 20px;
+                      }
+                      @media(min-width:768px) and (max-width:992px)
+                      {
+                        padding: 0px;
+                        margin: 0;
+                        font-size: 22px;
+                      }
+                      @media(min-width:1201px) and (max-width:1600px)
+                      {
+                            font-size: 20px;
+                      }
+                    }
+                    p
+                    {
+                      font-size: 16px;
+                      color:#fff;
+                      @media(min-width:1201px) and (max-width:1600px)
+                      {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        }
+        h6
+        {
+          width: 100%;
+          text-align: right;
+          padding: 12px 0px 0px 0px;
+          color: #261C20;
+          font-size: 12px;
+          font-family: $fontregular;
+          @media(max-width:992px)
+          {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+
+  #factsheet-wrapper
+  {
+    ul
+    {
+      list-style-type: none;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 30px;
+      align-items: end;
+      @media(max-width:992px)
+      {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px !important;
+      }
+        li
+        {
+          @media(max-width:992px)
+          {
+            margin: 0px auto 30px;
+            width: 100%;
+          }
+          @media(min-width:991px) and (max-width:1080px)
+          {
+            padding: 0px 10px !important;
+          }
+            padding: 0px 15px;
+            a
+            {
+              color: #261C20;
+              padding: 8px 0px;
+              border-radius: 0px;
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              &:hover
+              {
+                color:#FF8E43;
+                transition: 0.3s ease-in;
+              }
+              span
+              {
+                border-bottom: 2px solid #F7941D;
+              }
+              &.facts::before
+              {
+                content: url('/static/embassy/images/investors/FACTSHEE-icon.png');
+                padding: 0px 10px 0px 0px;
+              }
+              &.investor-presentation::before
+              {
+                content: url('/static/embassy/images/investors/overview-icons/Earnings-Presentation-icon.png');
+                padding: 0px 10px 0px 0px;
+              }
+              &.supp-data::before
+              {
+                content: url('/static/embassy/images/investors/overview-icons/Supplementary-Databook.png');
+                padding: 5px 10px 0px 0px;
+              }
+              &.hyr::before
+              {
+                content: url('/static/embassy/images/investors/overview-icons/Valuation-Report.png');
+                padding: 0px 10px 0px 0px;
+              }
+              &.faqs::before
+              {
+                content: url('/static/embassy/images/investors/faq.png');
+                padding: 0px 10px 0px 0px;
+              }
+              @media(max-width:375px)
+              {
+                font-size: 11px;
+                justify-content: center;
+              }
+              @media(max-width:768px)
+              {
+                justify-content: center;
+              }
+              @media(min-width:768px) and (max-width:992px)
+              {
+                justify-content: center;
+              }
+              @media(min-width:992px) and (max-width:1170px)
+              {
+                font-size: 9px;
+                    padding: 8px 10px;
+              }
+              @media(min-width:1160px) and (max-width:1400px)
+              {
+                font-size: 11px;
+                    padding: 8px 10px;
+              }
+              @media(min-width:1401px) and (max-width:1600px)
+              {
+                padding: 8px 12px;
+              }
+            }
+        }
+    }
+  }
+
+
+  #events-head-wrapper
+  {
+    h2
+    {
+      color:#094369;
+      font-size: 36px;
+      @media(max-width:576px)
+      {
+        font-size: 22px;
+      }
+      @media(max-width:768px)
+      {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .horizontal-bar
+  {
+    hr
+    {
+      color:#a9a9a9;
+      margin: 1rem 0 5rem;
+      @media(max-width:768px)
+      {
+        margin: 1rem 0 1rem;
+      }
+    }
+  }
+
+  #presentations-wrapper
+  {
+      margin-bottom: 50px;
+      @media(max-width:768px)
+      {
+        margin-bottom: 30px;
+      }
+    h2
+    {
+      font-size: 36px;
+      margin: 0;
+      padding-bottom: 10px;
+      color:#094369;
+      @media(max-width:576px)
+      {
+        font-size: 22px;
+      }
+      @media(max-width:768px)
+      {
+        font-size: 26px;
+      }
+    }
+    .search-wrapper
+    {
+      .search-form-wrapper
+      {
+        justify-content: flex-end;
+        display: flex;
+        padding-bottom: 20px;
+        align-items: center;
+        @media(max-width:768px)
+        {
+          justify-content: center;
+        }
+        label
+        {
+          padding-right: 20px;
+        }
+        select
+        {
+          border: none;
+          border-bottom: 1px solid #a9a9a9;
+          width: 10%;
+          padding: 0px 5px;
+          background-color: transparent;
+          @media(max-width:768px)
+          {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .presentation-inner-wrapper
+    {
+      border: 1px solid #BFBFBF;
+      padding: 30px;
+      margin: 15px 0px 15px;
+      @media(max-width:767px)
+      {
+        width: 100%;
+        margin: 10px 0px;
+        height: unset;
+      }
+      @media(min-width:767px) and (max-width:769px)
+      {
+        height: 90%;
+      }
+      img
+      {
+        padding-bottom: 10px;
+      }
+      .presentation-cont-wrapper
+      {
+        h5
+        {
+          padding: 0px 0px 0px 0px;
+          margin: 0;
+          color: #094369;
+          font-size: 14px;
+          min-height: 33px;
+          @media(min-width:768px) and (max-width:1250px)
+          {
+            min-height: 64px;
+          }
+        }
+        p
+        {
+          font-size: 13px;
+          color: #261C20;
+          padding-bottom: 15px;
+        }
+        a
+        {
+          color: #261C20;
+          border-bottom: 1px solid #FF8E43;
+          text-transform: uppercase;
+          font-size: 14px;
+          &:hover
+          {
+            color:#FF8E43;
+            transition: 0.3s ease-in;
+          }
+          @media(min-width:768px) and (max-width:992px)
+          {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  #webcasts-wrapper
+  {
+    background-color: #094369;
+    padding: 60px 0px 30px 0px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    @media(max-width:768px)
+    {
+      margin-top: 15px;
+    }
+    @media(min-width:768px) and (max-width:992px)
+    {
+      margin-top: 10px;
+    }
+    @media(min-width:992px) and (max-width:1399px)
+    {
+      margin-top: 15px;
+    }
+    .events-head-wrapper
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0px 10px;
+      width: 100%;
+      @media(max-width:576px)
+      {
+        display: block;
+        padding-bottom: 10px;
+      }
+      h2
+      {
+        color:#FFFFFF;
+        font-size: 36px;
+        padding-bottom: 20px;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+      }
+      a
+      {
+        color:#261C20;
+        font-size: 14px;
+        border-bottom: 1px solid #FF8E43;
+        padding-bottom: 4px;
+        margin: 20px 0px;
+      }
+    }
+    .events-banner-wrapper
+    {
+      background-image: url('/static/embassy/images/investors/shutterstock_481869205.png');
+      height: 35vh;
+      background-position: initial;
+      background-size: cover;
+      margin:  0px 10px;
+      width: 100%;
+      position: relative;
+      .img-overlay
+      {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .events-banner-cont-wrapper
+      {
+        position: absolute;
+        z-index: 2;
+        bottom: 5%;
+        padding: 20px;
+        p
+        {
+          color:rgba(255, 255, 255, 1);
+          font-size: 13px;
+          margin-bottom: 0px;
+        }
+        h6
+        {
+          color:rgba(255, 255, 255, 1);
+          font-size: 26px;
+          margin: 0;
+          padding: 0px 0px 15px 0px;
+        }
+        a
+        {
+          color:#fff;
+          font-size: 14px;
+          border-bottom: 1px solid #FF8E43;
+          padding-bottom: 4px;
+          margin: 20px 0px;
+        }
+      }
+    }
+
+    .events-car-wrapper {
+      overflow: hidden;
+      padding: 40px 10px;
+      @media(max-width:768px)
+      {
+        padding: 0px 10px;
+      }
+      .events-tabs
+      {
+        padding: 20px 0px;
+        border-bottom: none;
+        @media(max-width:768px)
+        {
+          display: flex;
+        }
+        .nav-link
+        {
+          background: transparent;
+          border: none;
+          color: #a9a9a9;
+          font-size: 26px;
+          padding: 20px 0px 20px 0px;
+          margin-right: 20px;
+          @media(max-width:768px)
+          {
+            font-size: 16px;
+          }
+          &.active
+          {
+            color:#fff;
+            border-bottom: 1px solid #F7941D;
+            padding-bottom: 10px;
+            @media(max-width:768px)
+            {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        .item
+        {
+          position: relative;
+          .upcoming-car-cont-wrapper
+          {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(9, 67, 105, 0.83);
+            padding: 20px;
+            width: 100%;
+            p
+            {
+              color:#fff;
+              font-size: 13px;
+              padding-bottom: 0px;
+            }
+            h6
+            {
+              color:#FFFFFF;
+              font-size: 16px;
+              padding-bottom: 10px;
+              margin: 0;
+            }
+            a
+            {
+              color:#FFFFFF;
+              border-bottom: 1px solid #FF8E43;
+              padding-bottom: 2px;
+            }
+          }
+        }
+        .owl-dots
+        {
+          .owl-dot
+          {
+             background-color: #fff;
+             &.active
+             {
+               background-color: #FF8E43;
+             }
+          }
+        }
+      }
+      #past-car
+      {
+        .item
+        {
+          position: relative;
+          .upcoming-car-cont-wrapper
+          {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(9, 67, 105, 0.83);
+            padding: 20px;
+            width: 100%;
+            p
+            {
+              color:#fff;
+              font-size: 13px;
+              padding-bottom: 0px;
+            }
+            h6
+            {
+              color:#FFFFFF;
+              font-size: 16px;
+              padding-bottom: 10px;
+              margin: 0;
+            }
+            a
+            {
+              color:#FFFFFF;
+              border-bottom: 1px solid #FF8E43;
+              padding-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  #investor-form
+  {
+    padding-bottom: 80px;
+    @media(max-width:768px)
+    {
+      padding-bottom: 40px;
+    }
+    .embassyy-invester-details
+    {
+      .investor--form--banner
+      {
+        padding: 60px 40px;
+        position: relative;
+        background: url(/static/embassy/images/subscribe.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media(max-width:576px)
+        {
+          padding: 40px 20px 25px 20px;
+        }
+      }
+    }
+  }
+}

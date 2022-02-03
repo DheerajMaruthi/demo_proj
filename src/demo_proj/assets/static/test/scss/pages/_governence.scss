@@ -1,0 +1,489 @@
+
+
+.banner--sec {
+    height: 400px;
+    background-position: center;
+background-size: cover !important;
+}
+
+.position-item {
+    height: 100%;
+    padding: 20px 0px;
+    .banner--head {
+        .banner--heading {
+            background-color: $bgwhite;
+            padding: 15px 20px;
+            h1 {
+                margin-bottom: 0px;
+            }
+        }
+        @media screen and (min-width: 1501.98px) {
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (max-width: 767.98px){
+            h1 {
+                font-size:30px;
+            }
+        }
+    }
+}
+
+.governance--sec {
+    padding: 50px 0px;
+    .list-group-item{
+        padding: 0px;
+        margin-bottom: 15px;
+        a {
+            display: block;
+            padding: .75rem 1.25rem;
+            font-family: $fontmedium;
+            font-size: 16px;
+            color: #231f20;
+        }
+        .active {
+            color: #fff;
+            font-family:$fontmedium;
+            background-color: #f7941e;
+        }
+    }
+    .tab-content {
+        @media screen and (min-width: 1000px) {
+            padding-left: 30px;
+        }
+        h3 {
+            color: $colorblack;
+            font-family:$fontmedium;
+            margin-bottom: 15px;
+        }
+    }
+}
+.suscribe--row {
+    border-top: 1px solid #f7941d;
+    background-color: $bgwhite;
+    padding: 80px 0px;
+    h3 {
+        color: $colorblack;
+        font-family:$fontmedium;
+        margin-bottom: 7px;
+    }
+    form {
+        .form-group {
+            flex: 50%;
+        }
+        .form-control {
+            width: 100%;
+            border: 1px solid #f7941d;
+            border-radius: 0px;
+        }
+        .btn {
+            background-color: #f7941d;
+            border: 1px solid #f7941d;
+            color: $colorwhite;
+            font-family: $fontmedium;
+            padding: 7px 32px;
+            align-self: self-start;
+            border-radius: 0px;
+        }
+    }
+}
+
+// Board of Directors page
+.bod--main {
+    h5 {
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+}
+h3 {
+    color: $colorblack;
+    font-family:$fontmedium;
+}
+.img--left {
+    float: left;
+    padding-right: 20px;
+}
+.down--pdf {
+    margin-top: 15px;
+    .pdf--down {
+        width: 20px;
+    }
+    span {
+        font-family:$fontmedium;
+        color: $colorblack;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+}
+// Ends Here
+
+// Executive Management page
+.bod--main {
+    h5 {
+        margin: 10px 0px;
+    }
+}
+h3 {
+    color: $colorblack;
+    font-family:$fontmedium;
+}
+.img--left {
+    float: left;
+    padding-right: 20px;
+}
+.down--pdf {
+    margin-top: 15px;
+    .pdf--down {
+        width: 20px;
+    }
+    span {
+        font-family:$fontmedium;
+        color: $colorblack;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+}
+
+
+.modal-content {
+    border-radius: 0px;
+    button.close {
+        position: absolute;
+        right: 0;
+        top: 19px;
+        right: 29px;
+        z-index: 2;
+        outline: 0;
+        opacity: 1;
+        span {
+            font-size: 43px;
+            color: #000;
+            opacity: 1;
+        }
+    }
+
+}
+
+
+// Composition page Scss
+
+#accordiansec {
+    background-color: $bgwhite;
+  .headingcom {
+    padding: 30px 0;
+  }
+
+  .card {
+    border-radius: 0 !important;
+    border: none !important;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    .card-header {
+        background-color: #f2f2f2;
+        padding: 15px 20px;
+    }
+    .card-header a {
+        color: #000000;
+        padding: 0px;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        font-family: $fontmedium;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .card-body{
+        #showLess {
+            display: none !important;
+        }
+        #loadMore {
+            display: none !important;
+        }
+        .read {
+            color:#EE9229;
+            font-size: 14px;
+            display: block;
+            text-transform: uppercase;
+            font-family: $fontregular;
+            text-decoration: none;
+            margin-top: 0px;
+        }
+        padding:0px 22px 20px;
+        background-color: #f2f2f2;
+        .card--content {
+            border-bottom: 1px solid #D1D1D1;
+            padding-bottom: 30px;
+            @media(max-width: 767px)
+            {
+              padding-bottom: 11px;
+            }
+        }
+        .team--content {
+            padding-top: 35px;
+            padding-bottom: 10px;
+            h4 {
+                font-size: 16px;
+                font-family: $fontmedium;
+                color: #261C20;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    position: relative;
+                    text-align: left;
+                    @media screen and (max-width:768px) and (min-width: 576px) {
+                      width: unset;
+                    }
+                    @media screen and (max-width: 576px) {
+                      width: unset;
+                    }
+                    img {
+                        position: relative;
+                        z-index: 2;
+                        margin-bottom: 7px;
+                        @media screen and (max-width: 767px) {
+                            display: block;
+                            text-align: left;
+                        }
+                    }
+                    .bg-patrn {
+                        background-color: #094369;
+                        height: 20px;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        left: 0px;
+                        margin: 0 auto;
+                        z-index: 0;
+                    }
+                    text-align: center;
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                        @media(max-width:768px)
+                        {
+                          margin-right: 5%;
+                        }
+                    }
+                    h6 {
+                        color: #261C20;
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                        margin-top: 4px;
+                        text-align: left;
+                        font-family: $fontmedium;
+                    }
+                    span {
+                        color: #261C20;
+                        font-size: 13px;
+                        font-family: $fontregular;
+                        display: block;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .inner--compo--content {
+            p {
+                font-size: 14px;
+                margin-bottom: 2px;
+                color: #585858;
+                font-family: $fontregular;
+                @media(max-width:767px)
+                {
+                  margin-bottom: 20px;
+                }
+            }
+            h5 {
+                font-size: 16px;
+                font-family: $fontmedium;
+                color:#261C20;
+            }
+        }
+
+    }
+    .card-header {
+      border-bottom: 0 !important;
+      .btn {
+          white-space: normal !important;}
+
+      .btn-link:focus {
+        text-decoration: none !important;
+      }
+
+      .btn-link:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+
+
+}
+#tablesec {
+    background-color: $bgwhite;
+  .table {
+      margin-bottom: 0px;
+  }
+  .table thead th {
+    vertical-align: middle !important;
+    border-bottom: none !important;
+    background:#6D6D6D  !important;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: $fontsemibold;
+}
+tbody tr {
+    background-color: #f2f2f2;
+    border-bottom: 4px solid #fff;
+}
+td {
+    text-align: center;
+    padding: 25px 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: $fontmedium;
+    img {
+        width: 25px;
+    }
+}
+}
+#chairmember {
+    background-color: #fff;
+    padding: 50px 0px 20px;
+    @media screen and (max-width: 767px) {
+        ul {
+            width: 100%;
+        }
+        li {
+                margin-right: 0px;
+        }
+        li:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    img {
+        width: 30px;
+    }
+    .truest--img {
+        display: flex;
+        p {
+            align-self: center;
+            padding-left: 20px;
+        }
+    }
+    ul {
+        li {
+            margin-right: 100px;
+        }
+    }
+}
+
+thead {
+    tr {
+        border-bottom: 10px solid #fff;
+    }
+}
+
+// Ends Here
+
+
+// Trustees page
+#trusteeco {
+    background-color: $bgwhite;
+    h3 {
+        margin-bottom: 15px;
+    }
+    .addcors {
+        color: $colorblack;
+        font-family:$fontmedium;
+    }
+  .axistextbox {
+    padding-bottom: 40px;
+    .addcors {
+      padding: 20px 0;
+    }
+  }
+}
+// Ends Here
+
+// Structure Page
+
+
+// Governance Documents Page Scss
+
+ #accordiansec{
+     .composition {
+         @media(max-width:767px)
+         {
+           margin-top: 10px !important;
+         }
+         @media screen and (max-width: 991px) {
+             padding: 10px;
+         }
+         margin-top: 20px;
+       .card-body {
+         .accordspace {
+           padding: 15px 0 5px;
+         }
+       }
+     }
+     .card {
+         border-radius: 0px;
+         .card-header {
+         }
+     }
+ }
+
+
+
+.composition {
+    .card-header {
+        a[aria-expanded="true"]{
+            background: url('/static/embassy/images/minus.svg');
+            background-repeat: no-repeat;
+            background-position: 100%;
+        }
+        a[aria-expanded="false"]{
+            background: url('/static/embassy/images/add.svg') ;
+            background-repeat: no-repeat !important;
+            background-position: 100% !important;
+        }
+    }
+}
+
+
+.managers-embassy-details {
+    .structureouterdiv {
+        border: 1px solid #CCCCCC;
+        padding: 25px;
+        border: 1px solid #ccc;
+        span {
+            font-size: 13px;
+            font-family: $fontregular;
+            color: #646464;
+        }
+        p {
+            color: #2E2A2A;
+            font-family: $fontsemibold;
+            font-size: 14px;
+        }
+    }
+}
+
+.bg--img {
+    .managers--bg {
+        height: 216px;
+        width: 152px;
+        margin: 0 auto;
+            background-position: bottom !important;
+        background-size: 150px !important;
+        background-repeat: no-repeat !important;
+    }
+    img {
+        width: 180px;
+    }
+}

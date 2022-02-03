@@ -1,0 +1,88 @@
+
+
+#exemanageban {
+  .banner--wrapper {
+    position: relative;
+    @include bannerwrapper;
+
+    .hammenu {
+      @include navmenu;
+    }
+
+    .banner--head {
+      position: absolute;
+      bottom: 10px;
+      @media screen and (min-width: 991.98px) {
+        width: 40%;
+      }
+
+      .banner--heading {
+        background-color: $bgwhite;
+        padding: 5px 20px;
+      }
+      @media screen and (min-width: 1501.98px) {
+        h1 {
+          font-size: 50px;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.exepeoplebox {
+  min-height: 150px;
+  width: 100%;
+
+  .exeimgborder {
+    border: 1px solid #000;
+
+    .exeimg {
+      width: 100%;
+    }
+  }
+
+  .exepeopletextbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          text-align: left;
+        }
+      }
+      .modal-body {
+        overflow-y: scroll;
+        .exeimgdes {
+          float: left;
+          margin-right: 20px;
+        }
+        .descriptionexe {
+          text-align: left;
+        }
+
+        .maindesc {
+          text-align: justify;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+#exemanagnt {
+  padding-top: 40px;
+}
+.spacing-sec {
+  padding-top: 40px;
+}

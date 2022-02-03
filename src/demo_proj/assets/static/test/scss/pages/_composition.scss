@@ -1,0 +1,158 @@
+// @import '../variables/colors';
+// @import 'responsive';
+// @import '../variables/variables';
+// @import '../variables/components';
+// @import '../variables/fonts';
+//
+//
+// #compositionban {
+//   .banner--wrapper {
+//     position: relative;
+//     @include bannerwrapper;
+//
+//     .hammenu {
+//       @include navmenu;
+//     }
+//
+//     .banner--head {
+//       position: absolute;
+//       bottom: 10px;
+//       @media screen and (min-width: 991.98px) {
+//         width: 45%;
+//       }
+//
+//       .banner--heading {
+//         background-color: $bgwhite;
+//         padding: 5px 20px;
+//       }
+//       @media screen and (min-width: 1501.98px) {
+//         h1 {
+//           font-size: 50px;
+//         }
+//       }
+//       @media screen and (max-width: 767.98px) {
+//         right: 0;
+//         left: 0;
+//         margin: 0 auto;
+//
+//         h1 {
+//           font-size: 30px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// #accordiansec {
+//     background-color: $bgwhite;
+//   .headingcom {
+//     padding: 30px 0;
+//   }
+//
+//   .card {
+//     border-radius: 0 !important;
+//     border: none !important;
+//     margin-bottom: 10px;
+//     padding: 10px 0px;
+//     background-color: #f3f3f3;
+//     .card-header {
+//         background-color: #f3f3f3;
+//     }
+//     .card-header button {
+//         color: $colorblack;
+//         span {
+//             font-family: $fontbold;
+//         }
+//         font-size: 18px;
+//         font-family: $fontbook;
+//     }
+//     .card-header a:before {
+//       font-family: 'Glyphicons Halflings';
+//       content: "\e114";
+//       float: right;
+//       transition: all 0.5s;
+//     }
+//
+//     .card-header.active a:before {
+//       -webkit-transform: rotate(180deg);
+//       -moz-transform: rotate(180deg);
+//       transform: rotate(180deg);
+//     }
+//     .card-body{
+//         padding: 10px 48px;
+//         background-color: #f3f3f3;
+//     }
+//     .card-header {
+//       border-bottom: 0 !important;
+//       .btn {
+//     white-space: normal !important;}
+//
+//       .btn-link:focus {
+//         text-decoration: none !important;
+//       }
+//
+//       .btn-link:hover {
+//         text-decoration: none !important;
+//       }
+//     }
+//   }
+//
+//   #accordion {
+//     .card-body {
+//       .accordspace {
+//         padding: 15px 0 5px;
+//       }
+//     }
+//   }
+// }
+// #tablesec {
+//     background-color: $bgwhite;
+//   padding-top: 40px;
+//   .table {
+//       margin-bottom: 0px;
+//   }
+//   .table thead th {
+//     vertical-align: top !important;
+//     border-bottom: none !important;
+//     background: #dee2e6 !important;
+//     text-align: center;
+// }
+// td {
+//     text-align: center;
+//     padding: 25px 0px;
+//     vertical-align: middle;
+//     img {
+//         width: 25px;
+//     }
+// }
+// }
+// #chairmember {
+//     background-color: #fff;
+//     padding: 50px 0px 50px;
+//     img {
+//         width: 30px;
+//     }
+//     .truest--img {
+//         display: flex;
+//         p {
+//             align-self: center;
+//             padding-left: 20px;
+//         }
+//     }
+//     ul {
+//         li {
+//             margin-right: 100px;
+//         }
+//     }
+// }
+// tbody {
+//     tr {
+//         background-color: #f3f3f3;
+//         border-bottom: 15px solid #fff;
+//     }
+// }
+// thead {
+//     tr {
+//         border-bottom: 10px solid #fff;
+//     }
+// }

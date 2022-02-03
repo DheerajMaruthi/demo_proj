@@ -1,0 +1,385 @@
+#occupiers-wrapper
+{
+  #occupiers-banner-wrapper
+  {
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @media(max-width:768px) {
+      height: 450px;
+      background-repeat: no-repeat !important;
+      background-image: url('/static/embassy/images/about-us/banners/Our_Strategic_Priorities-min.jpg') !important;
+      background-size: cover;
+      background-position: top center;
+    }
+    @media(min-width:991px) and (max-width:1550px)
+    {
+      height: 95vh !important;
+    }
+    .occupiers-head-wrapper
+    {
+      position: absolute;
+      bottom: 60px;
+      right: 0px;
+      left: 0px;
+      margin: 0 auto;
+      text-align: center;
+      h2
+      {
+        color:#fff;
+        font-size: 48px;
+        display: inline-block;
+        border-left: 15px solid #0f171d;
+        background-color: #f7941dd1;
+        opacity: 1;
+        padding: 15px 30px;
+        display: inline-block;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+        @media(max-width:768px)
+        {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  #occupiers-main-wrapper
+  {
+    padding: 55px 0px 35px 0px;
+    @media(max-width:992px)
+    {
+      padding: 22px 15px 12px 15px;
+      text-align: center;
+    }
+    .occupiers-head-wrapper {
+        text-align: center;
+      @media(min-width:768px) and (max-width:992px)
+      {
+        padding: 0px 0px 0px 0px;
+      }
+      h2
+      {
+        color:#094369;
+        font-size: 36px;
+        display: inline-block;
+        background-color: rgba(9, 67, 105, 0.8);
+        border-left: 14px solid #F7941D;
+        padding: 15px 30px;
+        display: inline-block;
+        margin: 0;
+          line-height: 32px;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+        }
+        @media(max-width:768px)
+        {
+          font-size: 26px;
+        }
+        @media(min-width:768px)
+        {
+          padding-bottom: 10px;
+        }
+      }
+      p
+      {
+        color:#094369;
+        padding-top: 5px;
+        font-size: 26px;
+        font-family: $fontmedium;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+          line-height: 32px;
+          text-align: left;
+          padding: 0;
+        }
+        @media(max-width:768px)
+        {
+          font-size: 26px;
+          text-align: left;
+          padding: 0;
+        }
+        @media(min-width:768px) and (max-width:992px)
+        {
+          text-align: left;
+        }
+        @media(min-width:768px)
+        {
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .occupiers-cont-wrapper
+    {
+      p
+      {
+        @media(max-width:992px)
+        {
+          padding-top: 10px;
+          text-align: left;
+        }
+      }
+      .occupiers-icon-wrapper {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        p {
+            margin-bottom: 15px;
+        }
+        @media(max-width:768px)
+        {
+          display: flex;
+          justify-content: center;
+        }
+        @media(min-width:768px) and (max-width:992px)
+        {
+          justify-content: left;
+        }
+        .occupiers-icon-cont-wrapper
+        {
+          display: flex;
+          align-items: center;
+          padding: 20px 30px 20px 0px;
+          @media(max-width:768px)
+          {
+            padding: 10px 0px 20px 0px;
+            display: block;
+            margin: 0 auto;
+          }
+          img
+          {
+            padding-right: 15px;
+            @media(max-width:768px)
+            {
+              padding-bottom: 20px;
+            }
+          }
+          h5
+          {
+            font-size: 35px;
+            color:#094369;
+            line-height: 25px;
+            span
+            {
+              font-size: 16px;
+              @media(max-width:768px)
+              {
+                line-height: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .horizontal-bar {
+    hr {
+      margin: 2rem 0 4rem;
+      border-top:1px solid rgba(112,112,112,0.5);
+      @media(max-width:992px)
+      {
+            margin: 2rem 0 2rem;
+      }
+    }
+  }
+  .side-hr {
+    @media(min-width:767px) and (max-width:992px)
+    {
+      display: none;
+    }
+      hr {
+          border:0px;
+          width: 1px;
+          background-color: #707070;
+          opacity: 0.5;
+          height: 100%;
+          margin: 0 auto;
+          border-top: 0px;
+      }
+  }
+  #diversification-wrapper
+  {
+    padding: 50px 0px 100px 0px;
+    @media(max-width:992px)
+    {
+      padding: 0px 15px 70px 15px;
+    }
+    .industry-wrappe {
+      border-right: 1px solid rgba(112,112,112,0.5);
+      height: 100%;
+      @media(min-width:768px) {
+        height: 100%;
+      }
+      h4 {
+        font-size: 36px;
+        color: #261C20;
+        padding-bottom: 25px;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+          padding-bottom: 20px;
+          margin: 0;
+          text-align: center;
+        }
+        @media(min-width:576px) and (max-width:768px)
+        {
+          font-size: 26px;
+          margin: 0;
+          text-align: center;
+        }
+        sup
+        {
+          font-size: 18px;
+          margin-left: -10px;
+        }
+      }
+      p
+      {
+        font-size: 14px;
+        padding: 20px 20px 20px 0px;
+        text-align: right;
+        color:#261C20;
+      }
+    }
+    .outer-top-10
+    {
+      @media(max-width:992px)
+      {
+        padding: 0px;
+      }
+      .top-10-wrapper
+      {
+        @media(min-width:768px) and (max-width:992px)
+        {
+          padding-left: 25px;
+        }
+        h4
+        {
+          font-size: 36px;
+          color: #261C20;
+          padding-bottom: 25px;
+          @media(max-width:576px)
+          {
+            font-size: 36px;
+            padding-bottom: 20px;
+            margin: 0;
+            text-align: left;
+            padding-top: 25px;
+          }
+          @media(min-width:576px) and (max-width:768px)
+          {
+            font-size: 36px;
+            margin: 0;
+            text-align: left;
+            padding-top: 25px;
+          }
+        }
+        #occupiers-car {
+            .carousel-inner {
+                min-height: 363px;
+            }
+          .carousel-indicators
+          {
+            bottom: -27px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin: 0;
+            @media(max-width:768px)
+            {
+              justify-content: center;
+
+            }
+            li
+            {
+              margin: 4px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #261c20;
+              &.active
+              {
+                border: 1px solid #f7941d;
+                width: 30px;
+                height: 8px;
+                border-radius: 7px;
+                background-color: #f7941d;
+              }
+            }
+          }
+          .logo-wrapper
+          {
+            padding: 0px 0px 50px;
+            align-items: center;
+            @media(max-width:992px)
+            {
+              padding: 0;
+              text-align: center;
+            }
+            @media(min-width:768px) and (max-width:992px)
+            {
+              text-align: left !important;
+            }
+            img {
+              @media(max-width:992px) {
+                padding: 20px 0px;
+              }
+              @media(min-width:768px)   {
+                width:70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.industry-wrapper  {
+    h4 {
+        font-size: 36px;
+        color: #261C20;
+        font-family: $fontmedium;
+        padding-bottom: 25px;
+        @media(min-width:768px)
+        {
+          width:111%;
+        }
+    }
+    img
+    {
+      margin-bottom: 20px;
+      @media(max-width:767px)
+      {
+        margin-bottom: 10px;
+      }
+    }
+    p
+    {
+      text-align: left;
+      color:#261C20;
+      padding-top: 10px;
+    }
+}
+.side-hr {
+  @media(min-width:767px) and (max-width:992px)
+  {
+    display: none;
+  }
+    hr {
+        border:0px;
+        width: 1px;
+        background-color: #707070;
+        opacity: 0.5;
+        height: 100%;
+        margin: 0 auto !important;
+        border-top: 0px;
+    }
+}

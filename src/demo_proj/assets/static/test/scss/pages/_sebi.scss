@@ -1,0 +1,133 @@
+
+
+
+ #sebi{
+   margin: 40px auto;
+   .sebirowmargin
+   {
+     margin-bottom: 20px;
+   }
+  .filter{
+    display: initial;
+    @media screen and (max-width:768px) {
+
+    .heading-sebi
+    {
+      text-align: center;
+    }
+  }
+    @media screen and (max-width:909px) and (min-width:768px){
+
+      .heading-sebi h2
+      {
+font-size: 20px;
+      }
+    }
+    .heading-sebi h2
+    {
+    font-weight: bold;
+    }
+.filterlist
+{
+    @media screen and (max-width:768px) and (min-width:600px) {
+      .List-sebi
+      {
+        display: flex!important;
+        float: initial!important;}
+
+    }
+    @media screen and (max-width:600px) {
+      .List-sebi
+      {
+        width: 100%!important;
+        display: initial!important;
+        float: right!important;
+      text-align: center;}
+        .filter-head-sebi
+        {
+            width: 100%!important;
+          margin-top: 16px;
+        }
+        .dropdown
+        {
+          margin-top: 16px;
+          padding: 0px 20px;
+          margin-bottom: 16px;
+        }
+    }
+.List-sebi
+{
+  display: flex;
+  float: right;
+  color: #707070;
+    font-weight: bold;
+  .filter-head-sebi
+  {
+        min-width: 100px;
+    margin-top: 16px;
+  }
+  .dropdown
+  {
+    margin-top: 16px;
+    padding: 0px 20px;
+    label
+    {
+      width: 80px;
+      border-bottom:  1px solid;
+    }
+  }
+}
+.Show-sebi
+{
+  width: 100%;
+  margin: auto;
+  background-color: #2A2A2A;
+  color: white;
+  border: none;
+      padding: 10px 25px;
+}
+}
+  }
+}
+#sebi-detail
+{
+  .row-change
+  {
+    margin-bottom: 30px;
+    @media screen and (max-width:768px) {
+    .col-md-4
+    {
+      margin-bottom: 20px;
+    }
+  }
+
+  .Presentation-border
+  {
+    border: 1px solid;
+
+  .paddingbox
+  {
+    padding: 40px;
+    p
+    {
+      padding-left: 15px;
+
+    }
+    .Investorleftpadding
+    {
+      padding-left: 0px;
+      a:hover
+      {
+    color: initial;
+      }
+    p
+    {
+      padding-left: 15px;
+      font-weight: bold;
+    }
+  }
+  }
+}
+}
+
+}

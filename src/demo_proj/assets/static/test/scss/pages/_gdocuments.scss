@@ -1,0 +1,152 @@
+
+
+#govdocsban {
+  .banner--wrapper {
+    position: relative;
+    @include bannerwrapper;
+
+    .hammenu {
+      @include navmenu;
+    }
+
+    .banner--head {
+      position: absolute;
+      bottom: 10px;
+      @media screen and (min-width: 991.98px) {
+        width: 40%;
+      }
+
+      .banner--heading {
+        background-color: $bgwhite;
+        padding: 5px 20px;
+      }
+      @media screen and (min-width: 1501.98px) {
+        h1 {
+          font-size: 50px;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.reithead {
+  padding-top: 40px;
+}
+
+#govdocs {
+  .govtopspace {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .docframeb {
+      padding: 25px 0;
+      text-align: center;
+      border: 1px solid #333333;
+      min-height: 120px;
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      & > div {
+          align-self: center;
+      }
+      .pdftitle {
+          display: flex;
+        .pdficonf {
+            img {
+                width: 40px;
+            }
+          padding-right: 10px;
+        }
+
+        .pdfname {
+          text-align: left;
+          align-self: center;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+#responsibility {
+    padding-bottom: 40px;
+    background-color: $bgwhite;
+  .respotopspace {
+    .docframeb {
+        display: flex;
+      padding: 25px 0;
+      text-align: center;
+      border: 1px solid #333333;
+      min-height: 120px;
+      text-align: center;
+      vertical-align: middle;
+      & > div {
+          align-self: center;
+      }
+      .pdftitle {
+          display: flex;
+        .pdficonf {
+            img {
+                width: 40px;
+            }
+          padding-right: 10px;
+        }
+
+        .pdfname {
+            align-self: center;
+          text-align: left;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .endsec {
+    padding-bottom: 40px;
+  }
+}
+
+#govdocssub {
+  border-top: 1px solid #333333;
+    background-color: $bgwhite;
+
+  .alerttextbox {
+    padding: 60px 12px;
+  }
+
+  .subsbox {
+    padding: 90px 12px;
+    margin: auto;
+
+    .btn-primary {
+      background-color: $btnbg1;
+      color: #fff;
+      border-radius: 0;
+      padding: 0 20px;
+      height: 40px;
+      display: inline-block;
+      width: 100%;
+      border: 1px solid $btnbg1;
+    }
+  }
+}
+
+.tospcrespo {
+  padding-top: 40px;
+}
+
+.respotopspace {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}

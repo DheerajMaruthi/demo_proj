@@ -1,0 +1,418 @@
+#portfolio-wrapper
+{
+  .portfolio--list--wrapper
+  {
+    background-color: #094369;
+    position: sticky;
+    top: 0px;
+    h2
+    {
+      color:#fff;
+      padding: 10px 20px;
+    }
+    ul.portfolio--list
+    {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li
+      {
+        padding: 12px 20px;
+        border-top: 1px solid #093551;
+        border-bottom: 1px solid #093551;
+        a
+        {
+          color:#fff;
+          text-decoration: none;
+          &.active
+          {
+            color:#0EB5D8;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio--cont--wrapper
+  {
+    padding-top: 20px;
+    @media(max-width:768px)
+    {
+      padding: 0px;
+    }
+    .port--breadcrumb--wrappper
+    {
+      .port--breadcrumb
+      {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        @media(max-width:992px)
+        {
+          flex-wrap: wrap;
+        }
+        li
+        {
+          text-transform: uppercase;
+          font-size: 11px;
+          a
+          {
+            color:#848484;
+            &::after
+            {
+              content:'>';
+              padding: 0px 5px;
+            }
+          }
+          &:last-child
+          {
+            a
+            {
+              color:#000;
+              &::after
+              {
+                content:'';
+              }
+            }
+          }
+        }
+      }
+    }
+    .availability-report-wrapper
+    {
+      background-image: url('/static/embassy/images/Embassy_TV_Drone_2DJI_0164F.png');
+      height: 160px;
+      background-position: center;
+      position: relative;
+      margin: 0px 15px;
+      .availability-cont-wrapper
+      {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding: 4.5% 0;
+        @media(max-width:375px)
+        {
+          padding: 16.5% 0px !important;
+        }
+        @media(min-width:376px) and (max-width:575px)
+        {
+              padding: 10.5% 0 !important;
+        }
+        @media(min-width:576px) and (max-width:768px)
+        {
+              padding: 8.5% 0 !important;
+        }
+        @media(min-width:769px) and (max-width:992px)
+        {
+            padding: 10.5% 0 !important;
+        }
+        h3
+        {
+          color:#FFFFFF;
+          font-size: 22px;
+        }
+        p
+        {
+          color:#FFFFFF;
+          font-size: 12px;
+          text-transform: uppercase;
+          cursor:pointer;
+        }
+        hr
+        {
+          margin-top: 0;
+          margin-bottom: 1rem;
+          border: 0;
+          border-top: 1px solid #FF7315;
+          width: 17%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .embassy--portfolio--view
+    {
+      .row
+      {
+        padding: 30px 0px;
+        justify-content: space-between;
+        @media(max-width:768px)
+        {
+          padding: 30px 0px 20px;
+        }
+        h3
+        {
+          color:#261C20;
+          font-size: 30px;
+          margin-left: 15px;
+        }
+        ul.nav
+        {
+          margin-right: 15px;
+          @media(max-width:768px)
+          {
+            margin-left: 10px;
+            margin-top: 10px;
+          }
+          li
+          {
+            margin: 0px 8px;
+            @media(max-width:600px)
+            {
+              display: contents;
+            }
+            @media(min-width:1501px) and (max-width:1800px)
+            {
+              margin: 0px !important;
+            }
+            &:last-child
+            {
+              margin: 0px;
+            }
+            &.active
+            {
+              a
+              {
+                border:1px solid #FF8E43;
+                background-color: #FF8E43;
+                border-radius: 22px;
+                padding: 8px 20px;
+                color:#fff;
+              }
+            }
+            a
+            {
+              border:1px solid #585858;
+              border-radius: 22px;
+              padding: 8px 20px;
+              margin: 5px;
+              @media(min-width:1501px) and (max-width:1800px)
+              {
+                padding: 8px 14px;
+              }
+              &:hover
+              {
+                border:1px solid #FF8E43;
+                background-color: #FF8E43;
+                border-radius: 22px;
+                padding: 8px 20px;
+                color:#fff;
+                transition: 0.3s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+    .embassy--portfolio--view
+    {
+      .prop--list
+      {
+        &:nth-child(odd)
+        {
+          text-align: left;
+          .properties--port
+          {
+            border: 1px solid #BFBFBF;
+            margin-bottom: 30px;
+            img
+            {
+              width: 100%;
+            }
+            .property--content
+            {
+              padding: 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              text-align: unset;
+              @media(max-width:576px)
+              {
+                padding: 10px !important;
+              }
+              .property--content-upper-wrapper
+              {
+                text-align: unset;
+                h4
+                {
+                  font-size: 18px;
+                  color: #094369;
+                }
+                span
+                {
+                  color:#585858;
+                  font-size: 14px;
+                  &::before
+                  {
+                    content:url('/static/embassy/images/pin.png');
+                    padding-right: 10px;
+                  }
+                }
+              }
+              .property--content-wrapper
+              {
+                p
+                {
+                  text-transform: uppercase;
+                  color: #261C20;
+                  border-bottom: 2px solid #FF7315;
+                  padding-bottom: 2px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(even)
+        {
+          text-align: right;
+          .properties--port
+          {
+            border: 1px solid #BFBFBF;
+            margin-bottom: 30px;
+            img
+            {
+              width: 100%;
+            }
+            .property--content
+            {
+              padding: 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              text-align: unset;
+              @media(max-width:576px)
+              {
+                padding: 10px !important;
+              }
+              .property--content-upper-wrapper
+              {
+                text-align: left;
+                h4
+                {
+                  font-size: 18px;
+                  color: #094369;
+                }
+                span
+                {
+                  color:#585858;
+                  font-size: 14px;
+                  &::before
+                  {
+                    content:url('/static/embassy/images/pin.png');
+                    padding-right: 10px;
+                  }
+                }
+              }
+              .property--content-wrapper
+              {
+                p
+                {
+                  text-transform: uppercase;
+                  color: #261C20;
+                  border-bottom: 2px solid #FF7315;
+                  padding-bottom: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#submodal
+{
+  top:20%;
+  .modal-dialog
+  {
+    @media(min-width:768px)
+    {
+        max-width: 30%;
+    }
+    .modal-content
+    {
+      .modal-header
+      {
+        border-bottom: unset;
+        justify-content: center;
+        text-align: center;
+        color: #261C20;
+        font-size: 26px;
+        padding: 30px 10px 10px 10px;
+        button.close
+        {
+          position: absolute;
+          right: 0;
+          top: 2px;
+          right: 12px;
+          z-index: 2;
+          outline: 0;
+          opacity: 1;
+          font-size: 25px;
+          font-weight: 100;
+          &:hover
+          {
+            color:#261C20;
+          }
+        }
+      }
+      .modal-body
+      {
+        padding: 0px 30px 30px 30px;
+        .subscribe-wrapper
+        {
+          .form-control
+          {
+            border: none;
+            border-bottom: 1px solid #585858;
+            border-radius: 0;
+            padding: 0;
+            color:#585858;
+            font-size: 14px;
+            margin-bottom: 24px;
+          }
+          .report-wrapper
+          {
+            display: flex;
+            justify-content: space-between;
+            .form-check-input
+            {
+              border-radius: 0;
+              padding: 0;
+            }
+            label
+            {
+              font-size: 12px;
+              color:#585858;
+              margin-left: 10px;
+            }
+          }
+          .sub-btn
+          {
+            text-align: center;
+            padding-top: 20px;
+            button
+            {
+              border: 1px solid #F39C38;
+              padding: 10px 30px;
+              background: #F6921E;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 14px;
+              &:hover
+              {
+                border:1px solid #F39C38;
+                background-color: #fff;
+                color:#F6921E;
+                transition: 0.3s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+$breakpoint-ipad: 767.98px;
+$breakpoint-mobile: 576.98px;
+$breakpoint-laptop:991.98px;
+$breakpoint-md: 1119.98px;
+$breakpoint-lg: 1501.98px;
+$breakpoint-lg: 1920px;
+
+@media screen and (min-width:1601px) {
+    .container {
+        max-width: 80%;
+    }
+    footer {
+        .container {
+            max-width: 81.5%;
+        }
+    }
+}
+
+@media screen and (min-width:991.98px) {
+    .mobile-view {
+        max-width: 80%;
+    }
+}
+@media screen and (min-width:991.98px) {
+    .desktop-view {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:1601px) and (min-width:1201px) {
+    .container {
+        max-width: 83%;
+    }
+    footer {
+        .container {
+            max-width: 84.5%;
+        }
+    }
+}
+@media screen and (max-width:1201px) and (min-width:991px) {
+    .container {
+        max-width: 86%;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .container {
+        max-width: 95%;
+    }
+}
+@media screen and (max-width:767.98px) {
+    .container {
+        padding: 0px;
+    }
+}
+@media screen and (min-width:767.98px) and (max-width:991.98px) {
+.container {
+    max-width: 93%;
+}
+}
+@media screen and (max-width:767.98px) {
+    .pl-sm-0 {
+        padding-left: 0;
+    }
+    .pr-sm-0
+    {
+      padding-right: 0;
+    }
+    .pll-sm-0 {
+        padding-left: 0;
+    }
+    .prr-sm-0
+    {
+      padding-right: 0;
+    }
+    .p-sm-0 {
+        padding: 0;
+    }
+    .container {
+        max-width: 100%;
+    }
+    h3 {
+        font-size: 22px !important;
+    }
+}
+footer {
+    @media screen and (max-width: 767px) {
+        h3 {
+            font-size: 16px !important;
+        }
+    }
+}

@@ -1,0 +1,428 @@
+#pressdetails-new
+{
+  #pressdetails-banner
+  {
+    height: 750px;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    @media(max-width:576px)
+    {
+      height: 450px;
+    }
+    @media(min-width:576px) and (max-width:992px)
+    {
+      height: 450px;
+    }
+    .pressdetails-cont-wrapper
+    {
+      position: absolute;
+      bottom: 20px;
+      h2
+      {
+        font-size: 48px;
+        color:#FFFFFF;
+        font-family: $fontmedium;
+        text-transform:capitalize;
+        text-shadow: 7px 7px 6px #444444;
+        @media(max-width:576px)
+        {
+          font-size: 22px;
+          padding: 0px 15px;
+        }
+        @media(min-width:576px) and (max-width:768px)
+        {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  #details-wrapper
+  {
+    @media(max-width:768px)
+    {
+      padding: 0px 15px;
+    }
+    h2
+    {
+      color:#094369;
+      font-size: 36px;
+      line-height: 36px;
+      padding: 40px 0px;
+      font-family: $fontmedium;
+      @media(max-width:576px)
+      {
+        font-size: 22px;
+        padding: 10px 0px;
+      }
+      @media(min-width:576px) and (max-width:768px)
+      {
+        font-size: 26px;
+        padding: 15px 0px;
+      }
+    }
+    .detail-row-wrapper
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 40px;
+      @media(max-width:992px)
+      {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-top: 25px;
+      }
+      @media(min-width:992px) and (max-width:1350px)
+      {
+        padding-bottom: 20px;
+      }
+      .detail-head-wrapper
+      {
+        @media(min-width:1200px)
+        {
+          width: 70%;
+        }
+        h3
+        {
+          font-size: 26px;
+          font-family: $fontmedium;
+          padding: 10px 0px 20px 0px;
+          color: #094369;
+          margin: 0;
+          @media(max-width:576px)
+          {
+            font-size: 20px;
+            padding: 10px 0px 20px 0px;
+          }
+          @media(min-width:576px) and (max-width:768px)
+          {
+            font-size: 22px;
+          }
+        }
+        p
+        {
+          font-size: 13px;
+          color:#261C20;
+          font-family: $fontregular;
+          padding-bottom: 20px;
+        }
+      }
+      .icon-outer--wrapper
+      {
+        display: flex;
+        align-items: flex-end;
+        p
+        {
+          img
+          {
+            padding-left:  10px;
+          }
+          &:first-child
+          {
+            @media(max-width:1200px)
+            {
+              img
+              {
+                  padding-left: 0;
+              }
+            }
+          }
+        }
+      }
+      .download-pr
+      {
+        margin-top: 30px;
+        @media(max-width:768px)
+        {
+          margin-bottom: 19px;
+        }
+        a
+        {
+          background: #094369;
+          padding: 10px 20px 14px 20px;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 8px;
+          @media(max-width:768px)
+          {
+            display: unset !important;
+          }
+          img
+          {
+            width:18px;
+          }
+        }
+      }
+
+    }
+    .detail-inner-cont-row
+    {
+      @media(max-width:992px)
+      {
+        margin-bottom: 20px;
+      }
+      @media(min-width:992px) and (max-width:1380px)
+      {
+        margin-bottom: 50px;
+      }
+      @media(min-width:1380px) and (max-width:1500px)
+      {
+        margin-bottom: 25px;
+      }
+      .detail-inner-cont-wrapper
+      {
+          .rm-link {
+              padding-left: 0px !important;
+          }
+        width: 100%;
+        @media(max-width:768px)
+        {
+          width: 100%;
+          margin-bottom: 0px;
+        }
+        @media(min-width:768px) and (max-width:992px)
+        {
+          width:90%;
+        }
+        h5
+        {
+          color:#261C20;
+          font-size: 16px;
+          font-family: $fontmedium;
+          padding-bottom: 20px;
+        }
+        h6
+        {
+          color:#261C20;
+          font-family: $fontregular;
+          text-transform: uppercase;
+          font-size: 13px;
+          margin: 0;
+          line-height: 36px;
+        }
+        p
+        {
+          color:#261C20;
+          font-family: $fontregular;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 0px 0px 20px 0px;
+        }
+        a
+        {
+          color:#FF8E43;
+          font-size: 14px;
+          font-family: $fontmedium;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          text-decoration: none;
+        }
+        ul
+        {
+          margin-left: 30px;
+          li
+          {
+            padding-bottom: 8px;
+            font-size: 16px;
+          }
+        }
+        img
+        {
+          @media(max-width:768px)
+          {
+            padding-bottom: 15px;
+          }
+        }
+        .overflow-text
+        {
+          margin-bottom: 0px;
+        }
+      }
+      .detai-img-wrapper
+      {
+        @media(min-width:768px)
+        {
+          text-align: right;
+        }
+      }
+    }
+    .detail-contact-wrapper
+    {
+      margin-top:unset;
+      @media(max-width:992px)
+      {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      @media(min-width:992px) and (max-width:1380px)
+      {
+        margin-top: 0;
+      }
+      @media(min-width:1501px)
+      {
+        margin-top: 20px;
+      }
+      h4
+      {
+        color:#261C20;
+        font-family: $fontmedium;
+        font-size: 22px;
+      }
+      h5
+      {
+        color:#261C20;
+        font-size: 14px;
+        font-family: $fontmedium;
+      }
+      h6
+      {
+        color:#585858;
+        font-size: 14px;
+        font-family: $fontregular;
+      }
+      p
+      {
+        color:#261C20;
+        font-size: 16px;
+        font-family: $fontregular;
+        line-height: 26px;
+        a
+        {
+          color:#FF8E43;
+          font-family: $fontregular;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #other-press-releases
+  {
+    padding: 30px 0px;
+    @media(max-width:992px)
+    {
+      padding: 0px 15px;
+    }
+    h2
+    {
+      font-size: 36px;
+      font-family: $fontmedium;
+      color:#261C20;
+      padding: 20px 0px;
+      @media(max-width:576px)
+      {
+        font-size: 20px;
+        padding: 14px 0px 20px 0px;
+      }
+      @media(min-width:576px) and (max-width:768px)
+      {
+        font-size: 22px;
+        padding: 14px 0px 20px 0px;
+      }
+    }
+    .other-press-releases-row
+    {
+      div
+      {
+        &:first-child
+        {
+          @media(max-width:991px)
+          {
+            padding: 0;
+          }
+          @media(min-width:992px)
+          {
+            padding-left: 0px;
+          }
+        }
+        &:last-child
+        {
+          @media(max-width:991px)
+          {
+            padding: 0;
+          }
+          @media(min-width:992px)
+          {
+            padding-right: 0px;
+          }
+        }
+      }
+      .press-release-wrapper
+      {
+        position: relative;
+        margin-bottom: 30px;
+        @media(max-width:768px)
+        {
+          margin-bottom: 20px;
+        }
+        .press-release-cont-wrapper
+        {
+          position: absolute;
+          bottom: 0;
+          background-color: rgba(9, 67, 105, 0.83);
+          padding: 20px 20px;
+          width: 100%;
+          p
+          {
+            color:#FFFFFF;
+            font-size: 14px;
+            font-family: $fontregular;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+          }
+          h4
+          {
+            color:#FFFFFF;
+            font-size: 18px;
+            font-family: $fontmedium;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .release-anchor-wrapper
+    {
+      margin-bottom: 80px;
+      @media(max-width:992px)
+      {
+        margin-bottom: 30px;
+      }
+      a
+      {
+        color:#261C20;
+        border-bottom: 2px solid #FF7315;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $fontmedium;
+      }
+    }
+  }
+
+}
+.press-release-wrapper {
+    height: 400px;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    background-size: cover !important;
+}
+.img--div {
+    @media screen and (min-width: 767px) {
+        float: right;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        img {
+            width:450px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding-bottom:20px;
+    }
+}
+#readls {
+    display: none;
+}

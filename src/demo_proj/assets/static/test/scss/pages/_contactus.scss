@@ -1,0 +1,224 @@
+
+
+
+.embassyy-contact-details {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .firstblock {
+        address{
+            margin-top: 30px;
+            margin-bottom: 40px;
+            p {
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #585858;
+                font-family: $fontsemibold;
+            }
+            .Principal {
+                margin-bottom: 10px;
+            }
+        }
+        iframe {
+            border-radius: 15px;
+            border:1px solid #ccc;
+        }
+    }
+    .formcontain {
+        padding: 40px;
+        width: 80%;
+        background-color: #f2f2f2;
+        h4  {
+            font-size: 18px;
+            font-family: $fontsemibold;
+            color: #585858;
+            margin-bottom: 25px;
+        }
+        label {
+            font-size: 18px;
+            font-family: $fontsemibold;
+            color: #585858;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom:20px;
+        }
+        .form-control {
+            border: 1px solid #707070;
+            padding: 20px 20px;
+            border-radius: 0px;
+        }
+        .btn-primary {
+            border-radius: 0px;
+            background-color: #F7941D;
+            padding: 15px 60px;
+            font-size: 18px;
+            font-family: $fontsemibold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    h3 {
+        font-size: 26px;
+        color:#231F20;
+        position: relative;
+        font-family: $fontmedium;
+        text-transform: uppercase;
+        &::before {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: #F7941D;
+            position: absolute;
+            top: -12px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.contact-embassy-details {
+    padding-left: 50px;
+    position: relative;
+    &::before {
+        content: '';
+        width: 40px;
+        height: 4px;
+        background-color: #F7941D;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 26px;
+        color:#231F20;
+        position: relative;
+        font-family: $fontmedium;
+        text-transform: uppercase;
+    }
+    address {
+        h5 {
+            text-transform: uppercase;
+            color: #231F20;
+            margin-right: -21px;
+            font-size: 18px;
+            font-family: $fontmedium;
+            background: url(/static/embassy/images/pin.png);
+            background-repeat: no-repeat;
+            padding-left: 20px;
+        }
+        font-family: $fontregular;
+        font-size: 16px;
+        color: #231F20;
+    }
+}
+.contact--form {
+    @media screen and (max-width: 991px) {
+        margin-top: 20px;
+    }
+    padding: 25px;
+    border: 1px solid #CCCCCC;
+    h4 {
+        font-size: 26px;
+        text-transform: uppercase;
+        font-family: $fontmedium;
+        color: #231F20;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 16px;
+        font-family: $fontmedium;
+        color: #231F20;
+    }
+    form {
+        margin-top: 25px;
+        label {
+            color: #585858;
+            font-family: $fontregular;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .form-group {
+            margin-bottom: 35px;
+        }
+        .form-control{
+            color: #231F20;
+            border: 1px solid #CCCCCC;
+            font-size: 16px;
+                font-family: $fontregular;
+            border-radius: 0px;
+            height: 50px;
+     }
+     select.form-control {
+         background: url(/static/embassy/images/down-arrow.png);
+         background-repeat: no-repeat;
+         background-position: 97%;
+         -webkit-appearance: none;
+     }
+     .btn--submit {
+         border: 1px solid #F39C38;
+         background-color: #F39C38;
+         color: #fff;
+         text-transform: uppercase;
+         font-size: 16px;
+         font-family: $fontmedium;
+         border-radius: 0px;
+         padding: 12px 30px;
+     }
+    }
+}
+
+.investers {
+    margin: 20px 0px 30px;
+    h6 {
+        font-size: 18px;
+        font-family: $fontmedium;
+        color: #231F20;
+        margin-bottom: 4px !important;
+    }
+    a {
+        font-size: 16px;
+        color: #E5820F;
+        font-family: $fontregular;
+    }
+    strong {
+        font-size: 16px;
+        color: #231F20;
+        font-family: $fontmedium;
+    }
+}
+.web--address {
+    strong {
+        font-size: 16px;
+        color: #231F20;
+        font-family: $fontmedium;
+    }
+    a {
+        font-size: 16px;
+        color: #E5820F;
+        font-family: $fontregular;
+    }
+}
+
+.corporat-contact {
+    h5 {
+        background: none !important;
+        padding-left: 0px !important;
+        font-size: 20px;
+        color: #221F1F;
+        font-family: $fontmedium;
+        margin-bottom: 20px;
+        text-transform: inherit !important;
+    }
+    h6 {
+        font-size: 18px !important;
+        text-transform: uppercase;
+    }
+    .tel {
+        color: #231F20;
+        font-family: $fontregular;
+        font-size: 16px;
+    }
+}

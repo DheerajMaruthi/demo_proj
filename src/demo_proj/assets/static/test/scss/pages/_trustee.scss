@@ -1,0 +1,54 @@
+// @import '../variables/colors';
+// @import 'responsive';
+// @import '../variables/variables';
+// @import '../variables/components';
+// @import '../variables/fonts';
+//
+//
+// #trusteeban {
+//   .banner--wrapper {
+//     position: relative;
+//     @include bannerwrapper;
+//
+//     .hammenu {
+//       @include navmenu;
+//     }
+//
+//     .banner--head {
+//       position: absolute;
+//       bottom: 10px;
+//       @media screen and (min-width: 991.98px) {
+//         width: 25%;
+//       }
+//
+//       .banner--heading {
+//         background-color: $bgwhite;
+//         padding: 5px 20px;
+//       }
+//       @media screen and (min-width: 1501.98px) {
+//         h1 {
+//           font-size: 50px;
+//         }
+//       }
+//       @media screen and (max-width: 767.98px) {
+//         right: 0;
+//         left: 0;
+//         margin: 0 auto;
+//         h1 {
+//           font-size: 30px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// #trusteeco {
+//     background-color: $bgwhite;
+//   .axistextbox {
+//     padding-top: 40px;
+//     padding-bottom: 40px;
+//     .addcors {
+//       padding: 20px 0;
+//     }
+//   }
+// }

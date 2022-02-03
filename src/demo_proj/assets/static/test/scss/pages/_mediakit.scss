@@ -1,0 +1,275 @@
+
+
+// Media Kit Videos
+#media--kit--videos{
+    .media--videos {
+        background-color: #fff;
+        padding: 40px 0px;
+    }
+    .media--details {
+        padding:20px 0px;
+        p {
+            margin: 10px 0px;
+        }
+    }
+}
+
+
+
+
+// Media Kit News Listing page
+.news--list--cont {
+    margin-top: 25px;
+    .list--date {
+        font-family:$fontregular;
+        color: #9a9a9a;
+        font-size: 11px;
+    }
+    p {
+        margin:10px 0px;
+    }
+    a.read--more {
+        color: $fontmedium;
+        color: $color3;
+    }
+}
+
+
+// Media Kit Page Starts Here
+
+#media--kitPage {
+    #media-kitContact {
+        .media--inner--para {
+            @media screen and (min-width: 991.98px) {
+                p {
+                    width: 80%;
+                }
+            }
+        }
+        padding: 50px 0px;
+        .media__contact {
+            padding: 40px 50px;
+            border: 1px solid $brdr4;
+            h4 {
+                font-size: 24px;
+                color: $colorblack;
+                font-family: $fontbold;
+                margin-bottom: 10px;
+            }
+            div {
+                margin: 10px 0px;
+                color: #636363;
+                font-family:$fontlight;
+            }
+            p {
+                font-family:$fontmedium;
+                margin-bottom:6px;
+                span {
+                    font-family:$fontlight;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    #media__wrapper__two {
+        padding: 50px 0px;
+        background-color: #ebebeb;
+        .img--wrapper {
+            padding: 30px;
+            background-color: $bgwhite;
+        }
+        .img--con {
+            padding: 20px 0px 0px;
+            p {
+                margin-bottom: 15px;
+                color: $colorblack;
+                font-family: $fontmedium;
+            }
+            a {
+                color: $color3;
+                font-family: $fontmedium;
+                i {
+                    margin-right:15px;
+                }
+            }
+        }
+    }
+}
+
+#media__management {
+    padding: 50px 0px;
+    h3 {
+        font-family:$fontbold;
+        color: $colorblack;
+        a {
+            float: right;
+        }
+
+    }
+    .btn--download {
+        background-color: $bgblack;
+        color: $colorwhite;
+        font-family: $fontmedium;
+        border-radius: 0px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .detail--row--manage {
+        .managment--wrapper {
+            img {
+                width: 100%;
+            }
+        }
+        .managment--des {
+            padding: 20px 0px 0px;
+            h6 {
+                font-family:$fontmedium;
+                color: $colorblack;
+                margin-bottom: 10px;
+            }
+            p {
+                font-family:$fontlight;
+                color: $colorblack;
+                margin-bottom: 10px;
+            }
+            a {
+                color: $color3;
+                font-family: $fontmedium;
+                i {
+                    margin-right:15px;
+                }
+            }
+        }
+    }
+    .nav-tabs .nav-link {
+        border: 0;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        border-bottom: 3px solid $brdr4;
+        font-family: $fontmedium;
+        color: $colorblack;
+    }
+}
+
+// Common For All Media Kit Pages
+.media--banner {
+    min-height: 400px;
+    padding:30px 0px 20px;
+    .hammenu {
+        @include navmenu;
+    }
+    .navmenu {
+        background-color: $colorwhite;
+        padding: 12px 0px;
+    }
+    & .row {
+        height: 100%;
+    }
+    .banner--head {
+        display: inline-block;
+        .banner--heading {
+            background-color: $bgwhite;
+            padding: 15px 20px;
+            h1 {
+                margin-bottom: 0px;
+            }
+        }
+        @media screen and (min-width: 1501.98px) {
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (max-width: 767.98px){
+            h1 {
+                font-size:30px;
+            }
+        }
+    }
+}
+
+#med--full--nav {
+    box-shadow: 0px 1px 2px 1px #ccc;
+    margin-bottom:1px;
+    ul {
+        li {
+            padding: 20px 15px 0px;
+            a {
+                padding: 0px 0px 15px 0px;
+                color: #757575;
+            }
+        }
+        .active {
+            a {
+                font-family:$fontbold;
+                color: $colorblack;
+                font-size: 17px;
+                position: relative;
+                &::after {
+                    content: '';
+                    background-color: $bgblack;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+.filter-drop .filter--head {
+    color: #000;
+    font-size: 17px;
+    display: inline-block;
+    padding-right: 25px;
+    font-weight: 600;
+}
+.media--search {
+    padding: 20px 0px;
+}
+.btn-filter {
+    border: 1px solid 1px solid #000;
+    border-radius: 0;
+    background-color: #000000;
+    color: #fff;
+    width: 130px;
+}
+
+.play--btn {
+    width: 100%;
+    height: 100%;
+    background-size: 60px!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+#my--video button.close {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    background-color: $bg10;
+    color: #fff;
+    top:0;
+    &:hover {
+        opacity: 1;
+    }
+}
+#my--video .close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+    color: #fff;
+}
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 70%;
+    margin: 1.75rem auto;
+}
+}

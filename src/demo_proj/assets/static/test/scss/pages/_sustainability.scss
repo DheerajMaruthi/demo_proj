@@ -1,0 +1,69 @@
+
+
+.jumbotron {
+  position: relative;
+  min-height: 300px;
+}
+
+.carousel-indicators {
+  li {
+    background-color: #E5E5E5;
+  }
+
+  bottom: -40px;
+
+  .active {
+    background-color: gray;
+  }
+}
+
+.jumbotron h2 {
+  position: absolute;
+  margin-left: 6%;
+  bottom: 10%;
+  background-color: white;
+  padding: 20px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.downlCard {
+  width: 60%;
+  border: 1px dashed;
+  margin: auto;
+}
+
+.downlEle {
+  text-align: center;
+  padding: 25px;
+
+  p {
+    line-height: 25px;
+  }
+}
+
+.bg-colour {
+  background-color: #E9ECEF;
+
+  > .container {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    text-align: center;
+  }
+
+  .mb-sm-4 {
+    margin-bottom: 2em;
+  }
+}
+
+.focus {
+    background-color: #094369;
+    padding: 60px 0px;
+}

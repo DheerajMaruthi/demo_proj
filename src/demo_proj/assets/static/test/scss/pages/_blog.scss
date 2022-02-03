@@ -1,0 +1,149 @@
+#blog {
+  @media (max-width: 550px) {
+    #blog-margin {
+      padding: 0;
+    }
+  }
+
+  #blog-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .paddingzero {
+    padding: 0;
+  }
+
+  h3 {
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .single-blog {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .date {
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .Blog-heading {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .readmore p{
+      margin: 10px 0 20px;
+      font-weight: bold;
+      color: $btnbg1;
+      position: relative;
+    }
+
+    .readmore a span {
+      font-size: 30px;
+      vertical-align: middle;
+       color: $btnbg1;
+    }
+
+    .blog-desc {
+      color: #707070;
+    }
+  }
+  @media (max-width: 768px) {
+    .displayblogs {
+      display: initial!important;
+      padding: 0;
+    }
+  }
+
+  .displayblogs {
+    display: flex;
+    padding: 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .date {
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .Blog-heading {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .readmore p{
+      margin: 10px 0 20px;
+      font-weight: bold;
+      color: $btnbg1;
+      position: relative;
+    }
+
+
+    .readmore a span {
+      font-size: 30px;
+      vertical-align: middle;
+       color: $btnbg1;
+       position: absolute;
+       top: 10px;
+    }
+
+    .blog-desc {
+      color: #707070;
+    }
+  }
+
+  .secondblock {
+    font-size: 14px;
+    padding: 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .date {
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .Blog-heading {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .readmore p{
+      margin: 10px 0 20px;
+      font-weight: bold;
+      color: $btnbg1;
+      position: relative;
+    }
+
+
+    .readmore a span {
+      font-size: 30px;
+      vertical-align: middle;
+       color: $btnbg1;
+    }
+
+    .blog-desc {
+      color: #707070;
+    }
+
+    .border-bloggrid {
+      border: 1px solid #474747;
+    }
+
+    .blog-grid {
+      border-bottom: 1px solid #707070;
+      padding: 0 25px;
+    }
+  }
+}

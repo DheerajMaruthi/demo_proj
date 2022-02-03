@@ -1,0 +1,54 @@
+
+#analystscoverage
+{
+  margin: 40px auto;
+  .firstheading
+  {
+font-weight: bold;
+padding-left: 0px;
+h2
+{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+  }
+  .secondheading{
+padding-left: 0px;
+    h3
+    {
+
+      margin-bottom: 20px;
+    }
+  }
+}
+#analysts-table
+{
+  table {
+  table-layout: fixed ;
+  width: 100% ;
+  border-collapse:separate;
+border-spacing: 0 3px;
+}
+  padding: 0px;
+  tr:first-child
+  {
+background-color: #DEDEDE;
+  }
+  th
+  {
+    text-align: inherit;
+padding: 15px;
+padding-left: 30px;
+
+
+  }
+  td
+  {
+    width: 33.33% ;
+    text-align: inherit;
+padding: 15px;
+padding-left: 30px;
+
+background-color: #F4F4F4;
+  }
+}
