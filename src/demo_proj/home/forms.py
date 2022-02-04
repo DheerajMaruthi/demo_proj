@@ -9,4 +9,4 @@ class HomeForm(forms.ModelForm):
 
     class Meta:
         model = HomePage
-        exclude = ('pub_date',)
+        fields = '__all__'

@@ -8,6 +8,8 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import FormMixin
+from django.urls import reverse_lazy
+
 
 from .models import HomePage
 from .forms import HomePageForm,HomeForm
@@ -41,28 +43,32 @@ class HomeDetailView(FormMixin, DetailView):
     template_name = "detail.html"
     model = HomePage
     form_class = HomeForm
+    success_url = reverse_lazy('home:list')
 
     def get_object(self):
         return HomePage.objects.filter(name=self.kwargs['name'])[:1].get()
 
-    def get_context_data(self, *args, **kwargs):
-        context = super(HomeDetailView, self).get_context_data(*args, **kwargs)
-        context['static_objects'] = HomePage.objects.all()[:1].get()
-        return context
+    # def get_context_data(self, *args, **kwargs):
+    #     context = super(HomeDetailView, self).get_context_data(*args, **kwargs)
+    #     context['static_objects'] = HomePage.objects.all()[:1].get()
+    #     return context
 
     def post(self, request, *args, **kwargs):
-        # self.object = self.get_object()
+        self.object = self.get_object()
         form = self.get_form()
         if form.is_valid():
             name = form.cleaned_data.get('name')
+            city = form.cleaned_data.get('city')
+            print(city)
             # possition_applied_for = form.cleaned_data.get('possition_applied_for')
             # mobile_number = form.cleaned_data.get('mobile_number')
             # date_of_birth = form.cleaned_data.get('date_of_birth')
-            if models.HomePage.objects.filter(name=name).exists():
-                form.add_error(None, "Name Exist")
+            if HomePage.objects.filter(city=city).exists():
+                form.add_error(None, "City Exist")
                 return self.form_invalid(form)
             else:
                 return self.form_valid(form)
+            form.save()
         else:
             return self.form_invalid(form)
 
