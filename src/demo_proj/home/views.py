@@ -1,3 +1,6 @@
+import json
+
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -26,7 +29,7 @@ class HomeView(TemplateView):
     template_name = "index.html"
 
 class HomeListView(ListView):
-    #template_name = "index.html"
+    template_name = "index.html"
     model = HomePage
 
     # def get_queryset(self):
@@ -112,3 +115,18 @@ class HomeCreateView(CreateView):
     fields = ['name','city','pub_date']
     template_name = 'create_name.html'
     success_url = '/'
+
+def ajax_post(request):
+    if request.method == 'GET':
+        post_text = request.POST.get('name_id')
+        response_data = 'Success'
+
+        return HttpResponse(
+            json.dumps(response_data),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"nothing to see": "this isn't happening"}),
+            content_type="application/json"
+        )

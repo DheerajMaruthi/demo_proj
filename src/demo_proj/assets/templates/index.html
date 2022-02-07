@@ -6,5 +6,35 @@
   </head>
   <body>
     <h1>Hi Good Morning</h1>
+    <form method="post" id="ajax-form">
+      {% csrf_token %}
+      <input type="text" class="name_class" id = 'name' value="">
+      <input type="submit" id="ajax-test" value="Submit">
+    </form>
+    <h1 id="message"></h1>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $('#ajax-form').on('submit', function(event){
+        event.preventDefault();
+        var catid;
+        catid = $(this).attr("name");
+        $.ajax(
+        {
+            type:"GET",
+            url: "/home/ajax-submit",
+            data:{
+                     name_id: catid
+            },
+            success: function( data )
+            {
+                $( '#message' ).text(data);
+            }
+         })
+    });
+    });
+    </script>
   </body>
 </html>
