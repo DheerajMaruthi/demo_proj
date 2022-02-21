@@ -12,7 +12,7 @@ from django.http import HttpResponseRedirect
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import FormMixin
 from django.urls import reverse_lazy
-
+from django.utils import timezone
 
 from .models import HomePage
 from .forms import HomePageForm,HomeForm
@@ -26,23 +26,39 @@ def index(request):
     return HttpResponse(a)
 
 class HomeView(TemplateView):
-    template_name = "index.html"
+    template_name = "templateview.html"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(HomeView, self).get_context_data(*args, **kwargs)
+        # context = {}
+        context['today'] = timezone.now()
+        return context
+
 
 class HomeListView(ListView):
     template_name = "index.html"
     model = HomePage
+    # queryset = HomePage.objects.filter(name="Anjali")
 
-    # def get_queryset(self):
-    #     # a = super(HomeListView.get_queryset)
-    #     return HomePage.objects.all()[:2]
+    def get_queryset(self, *args, **kwargs):
+        # a = super(HomeListView, self).get_context_data(*args, **kwargs)
+        # context = {}
+        a = HomePage.objects.all()
+        return a
+    #
+    #
+    # # def get_queryset(self):
+    # #     # a = super(HomeListView.get_queryset)
+    # #     return HomePage.objects.all()[:2]
     def get_context_data(self, *args, **kwargs):
         context = super(HomeListView, self).get_context_data(*args, **kwargs)
         # context = {}
-        context['static_objects'] = HomePage.objects.all()
+        # context['static_objects'] = HomePage.objects.all()
+        context['today'] = timezone.now()
         return context
 
 
-class HomeDetailView(FormMixin, DetailView):
+class HomeDetailView(FormMixin,DetailView):
     template_name = "detail.html"
     model = HomePage
     form_class = HomeForm
@@ -50,12 +66,12 @@ class HomeDetailView(FormMixin, DetailView):
 
     def get_object(self):
         return HomePage.objects.filter(name=self.kwargs['name'])[:1].get()
-
-    # def get_context_data(self, *args, **kwargs):
-    #     context = super(HomeDetailView, self).get_context_data(*args, **kwargs)
-    #     context['static_objects'] = HomePage.objects.all()[:1].get()
-    #     return context
-
+    #
+    def get_context_data(self, *args, **kwargs):
+        context = super(HomeDetailView, self).get_context_data(*args, **kwargs)
+        context['static_objects'] = HomePage.objects.all()[:1].get()
+        return context
+    #
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()
         form = self.get_form()
@@ -69,7 +85,10 @@ class HomeDetailView(FormMixin, DetailView):
             if HomePage.objects.filter(city=city).exists():
                 form.add_error(None, "City Exist")
                 return self.form_invalid(form)
+                print("if")
             else:
+                print("else")
+                form.save()
                 return self.form_valid(form)
             form.save()
         else:

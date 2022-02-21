@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(DATA_DIR, os.path.join(DATA_DIR, 'assets/media'))
-# STATIC_ROOT = os.path.join(DATA_DIR, os.path.join(DATA_DIR, 'assets/static'))
+STATIC_ROOT = os.path.join(BASE_DIR, os.path.join(BASE_DIR, 'assets/static'))
 SITE_ID = 1
 
 # Default primary key field type

@@ -6,6 +6,10 @@
   </head>
   <body>
     <h1>Hi Good Morning</h1>
+    {% for i in object_list %}
+    <h1>{{i.name}} {{i.city}}</h1>
+    {% endfor%}
+    <h1>{{today}}</h1>
     <form method="post" id="ajax-form">
       {% csrf_token %}
       <input type="text" class="name_class" id = 'name' value="">
