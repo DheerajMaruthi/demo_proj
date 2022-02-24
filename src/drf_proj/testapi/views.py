@@ -3,7 +3,9 @@ from django.contrib.auth.models import User, Group
 from rest_framework import generics
 from .serializers import UserSerializer,ArticleSerializer,AuthorSerializer
 from rest_framework.pagination import PageNumberPagination
-
+from rest_framework import viewsets
+from .models import Author
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 
@@ -23,6 +25,11 @@ class AuthorView(generics.CreateAPIView):
     # queryset = Article.objects.all()
     serializer_class = AuthorSerializer
 
+class AuthorView(generics.UpdateAPIView):
+    # queryset = Article.objects.all()
+    serializer_class = AuthorSerializer
+
+
 class ArticleView(generics.CreateAPIView):
     # queryset = Article.objects.all()
     serializer_class = ArticleSerializer
@@ -36,3 +43,11 @@ class ArticleView(generics.CreateAPIView):
     #
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
+
+class AuthorViewSet(viewsets.ModelViewSet):
+    """
+    A simple ViewSet for viewing and editing accounts.
+    """
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
+    permission_classes = [IsAuthenticated]
